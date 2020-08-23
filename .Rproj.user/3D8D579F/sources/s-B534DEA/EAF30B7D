@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "203621217",
+    "hash" : "0",
     "id" : "EAF30B7D",
-    "lastKnownWriteTime" : 1598213550,
-    "last_content_update" : 1598213625605,
+    "lastKnownWriteTime" : 1598216930,
+    "last_content_update" : 1598216930316,
     "path" : "~/Research/mood-disorder-prediction/statistical-analysis/index.Rmd",
     "project_path" : "index.Rmd",
     "properties" : {
-        "cursorPosition" : "9,107",
-        "scrollLine" : "0"
+        "cursorPosition" : "9,103",
+        "scrollLine" : "8"
     },
     "read_only" : false,
     "read_only_alternatives" : [

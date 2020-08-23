@@ -1,0 +1,57 @@
+Anova of BDI and male from file  
+            Df Sum Sq Mean Sq F value Pr(>F)   
+PER2AA       1    7.0    7.03   0.210 0.6482   
+PER2GG       1  284.1  284.06   8.472 0.0047 **
+Residuals   78 2615.1   33.53                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Anova of BDI and male from file  
+            Df Sum Sq Mean Sq F value Pr(>F)
+PER3ACG      1    0.5    0.53   0.014  0.905
+Residuals   79 2905.7   36.78               
+Anova of BDI and male from file  
+            Df Sum Sq Mean Sq F value Pr(>F)
+PER3BAA      1   57.9   57.92   1.593  0.211
+PER3BAG      1   11.4   11.42   0.314  0.577
+Residuals   78 2836.9   36.37               
+Anova of BDI and male from file  
+            Df Sum Sq Mean Sq F value Pr(>F)
+PER3CGG      1    0.9    0.85   0.023  0.880
+PER3CGT      1   13.7   13.73   0.370  0.545
+Residuals   78 2891.6   37.07               
+Anova of BDI and male from file  
+            Df Sum Sq Mean Sq F value Pr(>F)
+CLOCK3111CC  1   41.1   41.10   1.133  0.290
+CLOCK3111TC  1   36.1   36.11   0.996  0.321
+Residuals   78 2829.0   36.27               
+Anova of BDI and male from file  
+            Df Sum Sq Mean Sq F value Pr(>F)
+CRY1CC       1   12.9   12.87   0.349  0.556
+CRY1GG       1   18.9   18.93   0.514  0.476
+Residuals   78 2874.4   36.85               
+Anova of BDI and male from file  
+            Df Sum Sq Mean Sq F value Pr(>F)  
+CRY2GG       1     11   11.05   0.316 0.5757  
+CRY2AA       1    168  168.00   4.805 0.0314 *
+Residuals   78   2727   34.96                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Anova of BDI and male from file  
+            Df Sum Sq Mean Sq F value Pr(>F)  
+VNTRBB       1  185.6  185.60   5.415 0.0226 *
+VNTRAB       1   47.0   47.03   1.372 0.2450  
+Residuals   78 2673.6   34.28                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Anova of BDI and male from file  
+            Df Sum Sq Mean Sq F value Pr(>F)
+SOCIO        1      0    0.00       0  0.993
+Residuals   79   2906   36.79               
+Anova of BDI and male from file  
+            Df Sum Sq Mean Sq F value Pr(>F)
+AGE          1     42   42.05    1.16  0.285
+Residuals   79   2864   36.26               
+Anova of BDI and male from file  
+            Df Sum Sq Mean Sq F value Pr(>F)
+VNTRAB       1      6    5.96   0.162  0.688
+Residuals   79   2900   36.71               

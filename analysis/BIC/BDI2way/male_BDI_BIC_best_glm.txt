@@ -1,0 +1,14 @@
+BIC with BDI and male
+Fitting algorithm:  BIC-leaps
+Best Model:
+           df deviance
+Null Model 76 1872.750
+Full Model 80 2906.222
+
+	likelihood-ratio test - GLM
+
+data:  H0: Null Model vs. H1: Best Fit BIC-leaps
+X = 1033.5, df = 4, p-value < 2.2e-16
+
+      (Intercept)     PER2PER3BAAAG      PER2VNTRGGAA     PER3CCRY2GTAA CLOCK3111CRY2TCAG 
+         7.567989         21.432011          5.928791         -3.680328          4.046253 

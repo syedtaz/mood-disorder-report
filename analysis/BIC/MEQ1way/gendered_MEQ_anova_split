@@ -1,0 +1,54 @@
+Anova of MEQ and gendered from file  
+             Df Sum Sq Mean Sq F value Pr(>F)
+PER2AA        1     52   51.63   0.569  0.451
+PER2GG        1    176  176.07   1.940  0.165
+Residuals   263  23871   90.77               
+Anova of MEQ and gendered from file  
+             Df Sum Sq Mean Sq F value Pr(>F)
+PER3AGG       1    197  197.10   2.169  0.142
+PER3ACG       1      1    1.02   0.011  0.916
+Residuals   263  23901   90.88               
+Anova of MEQ and gendered from file  
+             Df Sum Sq Mean Sq F value Pr(>F)
+PER3BAA       1      4    4.22   0.046  0.829
+PER3BAG       1    204  203.86   2.244  0.135
+Residuals   263  23891   90.84               
+Anova of MEQ and gendered from file  
+             Df Sum Sq Mean Sq F value Pr(>F)
+PER3CGG       1     56   56.11   0.615  0.434
+PER3CGT       1     34   33.51   0.367  0.545
+Residuals   263  24010   91.29               
+Anova of MEQ and gendered from file  
+             Df Sum Sq Mean Sq F value Pr(>F)
+CLOCK3111CC   1    110  109.76   1.205  0.273
+CLOCK3111TC   1     33   32.67   0.359  0.550
+Residuals   263  23957   91.09               
+Anova of MEQ and gendered from file  
+             Df Sum Sq Mean Sq F value Pr(>F)
+CRY1CC        1    213  212.88   2.351  0.126
+CRY1GG        1     75   75.32   0.832  0.363
+Residuals   263  23811   90.54               
+Anova of MEQ and gendered from file  
+             Df Sum Sq Mean Sq F value Pr(>F)
+CRY2GG        1      9    9.36   0.102  0.749
+CRY2AA        1     10    9.82   0.107  0.744
+Residuals   263  24080   91.56               
+Anova of MEQ and gendered from file  
+             Df Sum Sq Mean Sq F value Pr(>F)
+VNTRBB        1     16   16.30   0.178  0.673
+VNTRAB        1     16   15.83   0.173  0.678
+Residuals   263  24067   91.51               
+Anova of MEQ and gendered from file  
+             Df Sum Sq Mean Sq F value Pr(>F)
+SOCIO         1     64   64.06   0.704  0.402
+Residuals   264  24035   91.04               
+Anova of MEQ and gendered from file  
+             Df Sum Sq Mean Sq F value   Pr(>F)    
+AGE           1   2953  2952.8   36.86 4.39e-09 ***
+Residuals   264  21146    80.1                     
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Anova of MEQ and gendered from file  
+             Df Sum Sq Mean Sq F value Pr(>F)
+GENDER        1     63   63.31   0.695  0.405
+Residuals   264  24036   91.04               

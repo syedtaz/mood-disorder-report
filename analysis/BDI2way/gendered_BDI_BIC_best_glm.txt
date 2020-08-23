@@ -1,0 +1,14 @@
+BIC with BDI and gendered
+Fitting algorithm:  BIC-leaps
+Best Model:
+            df deviance
+Null Model 281 53.43536
+Full Model 286 61.77700
+
+	likelihood-ratio test - GLM
+
+data:  H0: Null Model vs. H1: Best Fit BIC-leaps
+X = 8.3416, df = 5, p-value = 0.1384
+
+       (Intercept)             CRY2AA PER3BCLOCK3111AGTT       CRY1CRY2GGGG             GENDER              SOCIO 
+         0.8588358         -0.1931807          0.2223032         -0.2714358         -0.2133488         -7.3973660 

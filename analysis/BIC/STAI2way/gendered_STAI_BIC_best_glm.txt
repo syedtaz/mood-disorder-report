@@ -1,0 +1,14 @@
+BIC with STAI and gendered
+Fitting algorithm:  BIC-leaps
+Best Model:
+            df deviance
+Null Model 297 28308.71
+Full Model 301 32516.94
+
+	likelihood-ratio test - GLM
+
+data:  H0: Null Model vs. H1: Best Fit BIC-leaps
+X = 4208.2, df = 4, p-value < 2.2e-16
+
+  (Intercept)  PER2CRY2GGAG PER3CVNTRGTAB        GENDER           AGE 
+    51.248399      4.218694     -5.312502     -3.222887   -124.012472 

@@ -1,21 +1,99 @@
-# Introduction {#intro}
+# Univariate Logistic Regression
 
-You can label chapter and section titles using `{#label}` after them, e.g., we can reference Chapter \@ref(intro). If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \@ref(methods).
+```{r, results='hide', include = FALSE}
+univariate_lr <- function(gender, disease) {
+  df <- data.frame(Variable_Name=character(), Odds_Ratio=numeric(), Conf_25=numeric(), Conf_75=numeric(), P_Value=numeric())
+  f_path = paste(disease,'/split/',gender,sep='')
+  files <- list.files(path=f_path, pattern="*.csv", full.names=TRUE, recursive=FALSE)
 
-Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
-
-```{r nice-fig, fig.cap='Here is a nice figure!', out.width='80%', fig.asp=.75, fig.align='center'}
-par(mar = c(4, 4, .1, .1))
-plot(pressure, type = 'b', pch = 19)
+  for (f in files) {
+    data <- read.csv(file =f)
+    names(data)[ncol(data)] <- 'y'
+    res = glm(y ~ .,data=data,family=binomial())
+    trm <- attr(res$terms, "term.labels")
+    print(trm)
+    for (i in (seq(2,dim(data)[2],by=1))) {
+      res_vec <- c(trm[i-1], exp(summary(res)$coef[i,][1]), exp(confint(res)[i,]), summary(res)$coef[i,][4])
+      df[nrow(df) + 1,] = res_vec
+    }
+    
+  }
+  adjusted <- p.adjust(df[, c('P_Value')], method="BH")
+  df$Adjusted_P = adjusted
+  
+  df <- df[order(df$P_Value),]
+  df
+}
 ```
 
-Reference a figure by its code chunk label with the `fig:` prefix, e.g., see Figure \@ref(fig:nice-fig). Similarly, you can reference tables generated from `knitr::kable()`, e.g., see Table \@ref(tab:nice-tab).
+## BDI
 
-```{r nice-tab, tidy=FALSE}
-knitr::kable(
-  head(iris, 20), caption = 'Here is a nice table!',
-  booktabs = TRUE
-)
+### One-Way
+
+
+```{r, results='hide', include = FALSE}
+setwd("/Users/tazmilur/Research/mood-disorder-prediction/statistical-analysis/analysis/")
+BDI1way_gendered <- univariate_lr('gendered','BDI1way')
+BDI1way_male <- univariate_lr('male','BDI1way')
+BDI1way_female <- univariate_lr('female','BDI1way')
 ```
 
-You can write citations, too. For example, we are using the **bookdown** package [@R-bookdown] in this sample book, which was built on top of R Markdown and **knitr** [@xie2015].
+```{r, echo=FALSE}
+kableExtra::kable_styling(knitr::kable(BDI1way_gendered[BDI1way_gendered$P_Value <= 0.05,], booktabs = TRUE, 
+      caption = 'Potentially Significant Univariate LR Results from 1-way BDI with combined genders.'), bootstrap_options = c("striped", "hover", "condensed"), font_size = 10)
+```
+
+```{r, echo=FALSE}
+kableExtra::kable_styling(knitr::kable(BDI1way_male[BDI1way_male$P_Value <= 0.05,], booktabs = TRUE, 
+      caption = 'Potentially Significant Univariate LR Results from 1-way BDI with males.'), bootstrap_options = c("striped", "hover", "condensed"), font_size = 10)
+```
+
+```{r, echo=FALSE}
+kableExtra::kable_styling(knitr::kable(BDI1way_female[BDI1way_female$P_Value <= 0.05,], booktabs = TRUE, 
+      caption = 'Potentially Significant Univariate LR Results from 1-way BDI with females.'), bootstrap_options = c("striped", "hover", "condensed"), font_size = 10)
+```
+
+
+### Two-Way
+
+```{r, results='hide', include = FALSE}
+setwd("/Users/tazmilur/Research/mood-disorder-prediction/statistical-analysis/analysis/")
+BDI2way_gendered <- univariate_lr('gendered','BDI2way')
+BDI2way_male <- univariate_lr('male','BDI2way')
+BDI2way_female <- univariate_lr('female','BDI2way')
+```
+
+
+```{r, echo=FALSE}
+kableExtra::kable_styling(knitr::kable(BDI2way_gendered[BDI2way_gendered$P_Value <= 0.05,], booktabs = TRUE, 
+      caption = 'Potentially Significant Univariate LR Results from 2-way BDI with combined genders.'), bootstrap_options = c("striped", "hover", "condensed"), font_size = 10)
+```
+
+```{r, echo=FALSE}
+kableExtra::kable_styling(knitr::kable(BDI2way_male[BDI2way_male$P_Value <= 0.05,], booktabs = TRUE, 
+      caption = 'Potentially Significant Univariate LR Results from 2-way BDI with males.'), bootstrap_options = c("striped", "hover", "condensed"), font_size = 10)
+```
+
+```{r, echo=FALSE}
+kableExtra::kable_styling(knitr::kable(BDI2way_female[BDI2way_female$P_Value <= 0.05,], booktabs = TRUE, 
+      caption = 'Potentially Significant Univariate LR Results from 2-way BDI with females.'), bootstrap_options = c("striped", "hover", "condensed"), font_size = 10)
+```
+
+
+### Top Features
+
+## MEQ
+
+### One-Way
+
+### Two-Way
+
+### Top Features
+
+## STAI
+
+### One-Way
+
+### Two-Way
+
+### Top Features

@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Section 2 Univariate Logistic Regression | Mood Disorder Project Report</title>
+  <meta name="description" content="Summary from statistical analysis conducted on the results of the mood disorder project." />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Section 2 Univariate Logistic Regression | Mood Disorder Project Report" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Summary from statistical analysis conducted on the results of the mood disorder project." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Section 2 Univariate Logistic Regression | Mood Disorder Project Report" />
+  
+  <meta name="twitter:description" content="Summary from statistical analysis conducted on the results of the mood disorder project." />
+  
+
+<meta name="author" content="Tazmilur Saad" />
+
+
+<meta name="date" content="2020-08-23" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="references.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#feature-selection"><i class="fa fa-check"></i><b>1.1</b> Feature Selection</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#accuracy"><i class="fa fa-check"></i><b>1.2</b> Accuracy</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="univariate-logistic-regression.html"><a href="univariate-logistic-regression.html"><i class="fa fa-check"></i><b>2</b> Univariate Logistic Regression</a><ul>
+<li class="chapter" data-level="2.1" data-path="univariate-logistic-regression.html"><a href="univariate-logistic-regression.html#bdi"><i class="fa fa-check"></i><b>2.1</b> BDI</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="univariate-logistic-regression.html"><a href="univariate-logistic-regression.html#one-way"><i class="fa fa-check"></i><b>2.1.1</b> One-Way</a></li>
+<li class="chapter" data-level="2.1.2" data-path="univariate-logistic-regression.html"><a href="univariate-logistic-regression.html#two-way"><i class="fa fa-check"></i><b>2.1.2</b> Two-Way</a></li>
+<li class="chapter" data-level="2.1.3" data-path="univariate-logistic-regression.html"><a href="univariate-logistic-regression.html#top-features"><i class="fa fa-check"></i><b>2.1.3</b> Top Features</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="univariate-logistic-regression.html"><a href="univariate-logistic-regression.html#meq"><i class="fa fa-check"></i><b>2.2</b> MEQ</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="univariate-logistic-regression.html"><a href="univariate-logistic-regression.html#one-way-1"><i class="fa fa-check"></i><b>2.2.1</b> One-Way</a></li>
+<li class="chapter" data-level="2.2.2" data-path="univariate-logistic-regression.html"><a href="univariate-logistic-regression.html#two-way-1"><i class="fa fa-check"></i><b>2.2.2</b> Two-Way</a></li>
+<li class="chapter" data-level="2.2.3" data-path="univariate-logistic-regression.html"><a href="univariate-logistic-regression.html#top-features-1"><i class="fa fa-check"></i><b>2.2.3</b> Top Features</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="univariate-logistic-regression.html"><a href="univariate-logistic-regression.html#stai"><i class="fa fa-check"></i><b>2.3</b> STAI</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="univariate-logistic-regression.html"><a href="univariate-logistic-regression.html#one-way-2"><i class="fa fa-check"></i><b>2.3.1</b> One-Way</a></li>
+<li class="chapter" data-level="2.3.2" data-path="univariate-logistic-regression.html"><a href="univariate-logistic-regression.html#two-way-2"><i class="fa fa-check"></i><b>2.3.2</b> Two-Way</a></li>
+<li class="chapter" data-level="2.3.3" data-path="univariate-logistic-regression.html"><a href="univariate-logistic-regression.html#top-features-2"><i class="fa fa-check"></i><b>2.3.3</b> Top Features</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Mood Disorder Project Report</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="univariate-logistic-regression" class="section level1">
+<h1><span class="header-section-number">Section 2</span> Univariate Logistic Regression</h1>
+<div id="bdi" class="section level2">
+<h2><span class="header-section-number">2.1</span> BDI</h2>
+<div id="one-way" class="section level3">
+<h3><span class="header-section-number">2.1.1</span> One-Way</h3>
+<table class="table table-striped table-hover table-condensed" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:unnamed-chunk-3">Table 2.1: </span>Potentially Significant Univariate LR Results from 1-way BDI with combined genders.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:left;">
+Variable_Name
+</th>
+<th style="text-align:left;">
+Odds_Ratio
+</th>
+<th style="text-align:left;">
+Conf_25
+</th>
+<th style="text-align:left;">
+Conf_75
+</th>
+<th style="text-align:left;">
+P_Value
+</th>
+<th style="text-align:right;">
+Adjusted_P
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+19
+</td>
+<td style="text-align:left;">
+GENDER
+</td>
+<td style="text-align:left;">
+0.32028265851795
+</td>
+<td style="text-align:left;">
+0.160019629280375
+</td>
+<td style="text-align:left;">
+0.600969817821353
+</td>
+<td style="text-align:left;">
+0.000682538309461085
+</td>
+<td style="text-align:right;">
+0.0129682
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+17
+</td>
+<td style="text-align:left;">
+SOCIO
+</td>
+<td style="text-align:left;">
+1.17287117297003e-13
+</td>
+<td style="text-align:left;">
+8.81463000562177e-23
+</td>
+<td style="text-align:left;">
+7.41723893036682e-05
+</td>
+<td style="text-align:left;">
+0.00449881224887819
+</td>
+<td style="text-align:right;">
+0.0377253
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+14
+</td>
+<td style="text-align:left;">
+CRY2AA
+</td>
+<td style="text-align:left;">
+0.40986717267618
+</td>
+<td style="text-align:left;">
+0.213003338736165
+</td>
+<td style="text-align:left;">
+0.763465578698565
+</td>
+<td style="text-align:left;">
+0.00595663182489002
+</td>
+<td style="text-align:right;">
+0.0377253
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+13
+</td>
+<td style="text-align:left;">
+CRY2GG
+</td>
+<td style="text-align:left;">
+0.470588235295514
+</td>
+<td style="text-align:left;">
+0.251973905287909
+</td>
+<td style="text-align:left;">
+0.85771422141271
+</td>
+<td style="text-align:left;">
+0.015505295302681
+</td>
+<td style="text-align:right;">
+0.0736502
+</td>
+</tr>
+</tbody>
+</table>
+<table class="table table-striped table-hover table-condensed" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:unnamed-chunk-4">Table 2.2: </span>Potentially Significant Univariate LR Results from 1-way BDI with males.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Variable_Name
+</th>
+<th style="text-align:left;">
+Odds_Ratio
+</th>
+<th style="text-align:left;">
+Conf_25
+</th>
+<th style="text-align:left;">
+Conf_75
+</th>
+<th style="text-align:left;">
+P_Value
+</th>
+<th style="text-align:right;">
+Adjusted_P
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+</tr>
+</tbody>
+</table>
+<table class="table table-striped table-hover table-condensed" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:unnamed-chunk-5">Table 2.3: </span>Potentially Significant Univariate LR Results from 1-way BDI with females.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:left;">
+Variable_Name
+</th>
+<th style="text-align:left;">
+Odds_Ratio
+</th>
+<th style="text-align:left;">
+Conf_25
+</th>
+<th style="text-align:left;">
+Conf_75
+</th>
+<th style="text-align:left;">
+P_Value
+</th>
+<th style="text-align:right;">
+Adjusted_P
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+17
+</td>
+<td style="text-align:left;">
+SOCIO
+</td>
+<td style="text-align:left;">
+3.49561159122678e-16
+</td>
+<td style="text-align:left;">
+1.22901371589301e-26
+</td>
+<td style="text-align:left;">
+2.59857961084344e-06
+</td>
+<td style="text-align:left;">
+0.00272116374513068
+</td>
+<td style="text-align:right;">
+0.0517021
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+14
+</td>
+<td style="text-align:left;">
+CRY2AA
+</td>
+<td style="text-align:left;">
+0.491775382870852
+</td>
+<td style="text-align:left;">
+0.241124288665398
+</td>
+<td style="text-align:left;">
+0.975371437926633
+</td>
+<td style="text-align:left;">
+0.0456263762897336
+</td>
+<td style="text-align:right;">
+0.4304564
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="two-way" class="section level3">
+<h3><span class="header-section-number">2.1.2</span> Two-Way</h3>
+<table class="table table-striped table-hover table-condensed" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:unnamed-chunk-7">Table 2.4: </span>Potentially Significant Univariate LR Results from 2-way BDI with combined genders.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:left;">
+Variable_Name
+</th>
+<th style="text-align:left;">
+Odds_Ratio
+</th>
+<th style="text-align:left;">
+Conf_25
+</th>
+<th style="text-align:left;">
+Conf_75
+</th>
+<th style="text-align:left;">
+P_Value
+</th>
+<th style="text-align:right;">
+Adjusted_P
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+219
+</td>
+<td style="text-align:left;">
+GENDER
+</td>
+<td style="text-align:left;">
+0.32028265851795
+</td>
+<td style="text-align:left;">
+0.160019629280375
+</td>
+<td style="text-align:left;">
+0.600969817821353
+</td>
+<td style="text-align:left;">
+0.000682538309461085
+</td>
+<td style="text-align:right;">
+0.1494759
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+217
+</td>
+<td style="text-align:left;">
+SOCIO
+</td>
+<td style="text-align:left;">
+1.17287117297003e-13
+</td>
+<td style="text-align:left;">
+8.81463000562177e-23
+</td>
+<td style="text-align:left;">
+7.41723893036682e-05
+</td>
+<td style="text-align:left;">
+0.00449881224887819
+</td>
+<td style="text-align:right;">
+0.3564687
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+201
+</td>
+<td style="text-align:left;">
+CRY2AA
+</td>
+<td style="text-align:left;">
+0.40986717267618
+</td>
+<td style="text-align:left;">
+0.213003338736165
+</td>
+<td style="text-align:left;">
+0.763465578698565
+</td>
+<td style="text-align:left;">
+0.00595663182489002
+</td>
+<td style="text-align:right;">
+0.3564687
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+103
+</td>
+<td style="text-align:left;">
+PER3BCRY2GGAA
+</td>
+<td style="text-align:left;">
+0.386809269162208
+</td>
+<td style="text-align:left;">
+0.18592691962351
+</td>
+<td style="text-align:left;">
+0.76957966183647
+</td>
+<td style="text-align:left;">
+0.00840321923504926
+</td>
+<td style="text-align:right;">
+0.3564687
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+102
+</td>
+<td style="text-align:left;">
+PER3BCRY2GGGG
+</td>
+<td style="text-align:left;">
+0.413009404388715
+</td>
+<td style="text-align:left;">
+0.208465641868362
+</td>
+<td style="text-align:left;">
+0.791822466049042
+</td>
+<td style="text-align:left;">
+0.00909379792061949
+</td>
+<td style="text-align:right;">
+0.3564687
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+175
+</td>
+<td style="text-align:left;">
+CRY1CRY2GGGG
+</td>
+<td style="text-align:left;">
+0.176136363665317
+</td>
+<td style="text-align:left;">
+0.0384736466736563
+</td>
+<td style="text-align:left;">
+0.584681180224461
+</td>
+<td style="text-align:left;">
+0.00985526496178597
+</td>
+<td style="text-align:right;">
+0.3564687
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+191
+</td>
+<td style="text-align:left;">
+CRY2VNTRAAAA
+</td>
+<td style="text-align:left;">
+0.287390029325516
+</td>
+<td style="text-align:left;">
+0.100498836341506
+</td>
+<td style="text-align:left;">
+0.747045822659057
+</td>
+<td style="text-align:left;">
+0.0137754476207065
+</td>
+<td style="text-align:right;">
+0.3564687
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+69
+</td>
+<td style="text-align:left;">
+PER3ACRY2CCAA
+</td>
+<td style="text-align:left;">
+0.426573426573427
+</td>
+<td style="text-align:left;">
+0.211372424560642
+</td>
+<td style="text-align:left;">
+0.830970353220911
+</td>
+<td style="text-align:left;">
+0.0142559627685928
+</td>
+<td style="text-align:right;">
+0.3564687
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+200
+</td>
+<td style="text-align:left;">
+CRY2GG
+</td>
+<td style="text-align:left;">
+0.470588235295514
+</td>
+<td style="text-align:left;">
+0.251973905287909
+</td>
+<td style="text-align:left;">
+0.85771422141271
+</td>
+<td style="text-align:left;">
+0.015505295302681
+</td>
+<td style="text-align:right;">
+0.3564687
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+158
+</td>
+<td style="text-align:left;">
+CLOCK3111CRY2TTAA
+</td>
+<td style="text-align:left;">
+0.364428945074804
+</td>
+<td style="text-align:left;">
+0.154927085905155
+</td>
+<td style="text-align:left;">
+0.812873287552954
+</td>
+<td style="text-align:left;">
+0.0162771106794543
+</td>
+<td style="text-align:right;">
+0.3564687
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+183
+</td>
+<td style="text-align:left;">
+CRY1VNTRGGAA
+</td>
+<td style="text-align:left;">
+0.350877192982639
+</td>
+<td style="text-align:left;">
+0.141359391546971
+</td>
+<td style="text-align:left;">
+0.823448513756832
+</td>
+<td style="text-align:left;">
+0.0189565785420681
+</td>
+<td style="text-align:right;">
+0.3774082
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+162
+</td>
+<td style="text-align:left;">
+CLOCK3111CRY2TCGG
+</td>
+<td style="text-align:left;">
+0.350230414747033
+</td>
+<td style="text-align:left;">
+0.132934432689432
+</td>
+<td style="text-align:left;">
+0.848520056153915
+</td>
+<td style="text-align:left;">
+0.0250614702904145
+</td>
+<td style="text-align:right;">
+0.4257407
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+169
+</td>
+<td style="text-align:left;">
+CLOCK3111VNTRTCAA
+</td>
+<td style="text-align:left;">
+0.323232323232314
+</td>
+<td style="text-align:left;">
+0.110739735263866
+</td>
+<td style="text-align:left;">
+0.824981166600871
+</td>
+<td style="text-align:left;">
+0.0252722782148538
+</td>
+<td style="text-align:right;">
+0.4257407
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+137
+</td>
+<td style="text-align:left;">
+PER3CCRY2GTAA
+</td>
+<td style="text-align:left;">
+0.172222222274543
+</td>
+<td style="text-align:left;">
+0.0255572598289705
+</td>
+<td style="text-align:left;">
+0.68914341378496
+</td>
+<td style="text-align:left;">
+0.0279692191464563
+</td>
+<td style="text-align:right;">
+0.4375185
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+187
+</td>
+<td style="text-align:left;">
+CRY1VNTRCGAB
+</td>
+<td style="text-align:left;">
+0.434782608696896
+</td>
+<td style="text-align:left;">
+0.194636318581267
+</td>
+<td style="text-align:left;">
+0.946479494760242
+</td>
+<td style="text-align:left;">
+0.0381051972219797
+</td>
+<td style="text-align:right;">
+0.4783181
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+132
+</td>
+<td style="text-align:left;">
+PER3CCRY2GGAA
+</td>
+<td style="text-align:left;">
+0.2421875
+</td>
+<td style="text-align:left;">
+0.0520130263105891
+</td>
+<td style="text-align:left;">
+0.83098665971835
+</td>
+<td style="text-align:left;">
+0.0385497501154371
+</td>
+<td style="text-align:right;">
+0.4783181
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+179
+</td>
+<td style="text-align:left;">
+CRY1CRY2CGAA
+</td>
+<td style="text-align:left;">
+0.336956521739283
+</td>
+<td style="text-align:left;">
+0.110233793329542
+</td>
+<td style="text-align:left;">
+0.915951847018425
+</td>
+<td style="text-align:left;">
+0.0412534945320755
+</td>
+<td style="text-align:right;">
+0.4783181
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+54
+</td>
+<td style="text-align:left;">
+PER3APER3CCGTT
+</td>
+<td style="text-align:left;">
+0.208333333333333
+</td>
+<td style="text-align:left;">
+0.031993546664443
+</td>
+<td style="text-align:left;">
+0.777931529645671
+</td>
+<td style="text-align:left;">
+0.0425231308404381
+</td>
+<td style="text-align:right;">
+0.4783181
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+163
+</td>
+<td style="text-align:left;">
+CLOCK3111CRY2TCAA
+</td>
+<td style="text-align:left;">
+0.350230414747032
+</td>
+<td style="text-align:left;">
+0.116663299608801
+</td>
+<td style="text-align:left;">
+0.930729714571787
+</td>
+<td style="text-align:left;">
+0.0445891213931522
+</td>
+<td style="text-align:right;">
+0.4783181
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+71
+</td>
+<td style="text-align:left;">
+PER3ACRY2CGGG
+</td>
+<td style="text-align:left;">
+0.213286713286713
+</td>
+<td style="text-align:left;">
+0.0323049937365282
+</td>
+<td style="text-align:left;">
+0.823122201848551
+</td>
+<td style="text-align:left;">
+0.048999895190811
+</td>
+<td style="text-align:right;">
+0.4783181
+</td>
+</tr>
+</tbody>
+</table>
+<table class="table table-striped table-hover table-condensed" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:unnamed-chunk-8">Table 2.5: </span>Potentially Significant Univariate LR Results from 2-way BDI with males.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Variable_Name
+</th>
+<th style="text-align:left;">
+Odds_Ratio
+</th>
+<th style="text-align:left;">
+Conf_25
+</th>
+<th style="text-align:left;">
+Conf_75
+</th>
+<th style="text-align:left;">
+P_Value
+</th>
+<th style="text-align:right;">
+Adjusted_P
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+</tr>
+</tbody>
+</table>
+<table class="table table-striped table-hover table-condensed" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:unnamed-chunk-9">Table 2.6: </span>Potentially Significant Univariate LR Results from 2-way BDI with females.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:left;">
+Variable_Name
+</th>
+<th style="text-align:left;">
+Odds_Ratio
+</th>
+<th style="text-align:left;">
+Conf_25
+</th>
+<th style="text-align:left;">
+Conf_75
+</th>
+<th style="text-align:left;">
+P_Value
+</th>
+<th style="text-align:right;">
+Adjusted_P
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+212
+</td>
+<td style="text-align:left;">
+SOCIO
+</td>
+<td style="text-align:left;">
+3.49561159122678e-16
+</td>
+<td style="text-align:left;">
+1.22901371589301e-26
+</td>
+<td style="text-align:left;">
+2.59857961084344e-06
+</td>
+<td style="text-align:left;">
+0.00272116374513068
+</td>
+<td style="text-align:right;">
+0.5823290
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+165
+</td>
+<td style="text-align:left;">
+CLOCK3111VNTRTCAA
+</td>
+<td style="text-align:left;">
+0.172173913679323
+</td>
+<td style="text-align:left;">
+0.0378303948595458
+</td>
+<td style="text-align:left;">
+0.565712883031049
+</td>
+<td style="text-align:left;">
+0.00851171424531367
+</td>
+<td style="text-align:right;">
+0.8738111
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+184
+</td>
+<td style="text-align:left;">
+CRY2VNTRGGAA
+</td>
+<td style="text-align:left;">
+0.246376811594314
+</td>
+<td style="text-align:left;">
+0.0755108740011772
+</td>
+<td style="text-align:left;">
+0.722521118717516
+</td>
+<td style="text-align:left;">
+0.0139273712826484
+</td>
+<td style="text-align:right;">
+0.8738111
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+158
+</td>
+<td style="text-align:left;">
+CLOCK3111CRY2TCGG
+</td>
+<td style="text-align:left;">
+0.304093567252255
+</td>
+<td style="text-align:left;">
+0.0978077259843161
+</td>
+<td style="text-align:left;">
+0.844687487227965
+</td>
+<td style="text-align:left;">
+0.0283436336770845
+</td>
+<td style="text-align:right;">
+0.8738111
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+187
+</td>
+<td style="text-align:left;">
+CRY2VNTRAAAA
+</td>
+<td style="text-align:left;">
+0.300505050505855
+</td>
+<td style="text-align:left;">
+0.0971820882454504
+</td>
+<td style="text-align:left;">
+0.8567940087497
+</td>
+<td style="text-align:left;">
+0.0288672032412203
+</td>
+<td style="text-align:right;">
+0.8738111
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+197
+</td>
+<td style="text-align:left;">
+CRY2AA
+</td>
+<td style="text-align:left;">
+0.491775382870852
+</td>
+<td style="text-align:left;">
+0.241124288665398
+</td>
+<td style="text-align:left;">
+0.975371437926633
+</td>
+<td style="text-align:left;">
+0.0456263762897336
+</td>
+<td style="text-align:right;">
+0.8738111
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+132
+</td>
+<td style="text-align:left;">
+PER3CCRY2GTGG
+</td>
+<td style="text-align:left;">
+0.246428571428573
+</td>
+<td style="text-align:left;">
+0.0513745398266514
+</td>
+<td style="text-align:left;">
+0.888043294705987
+</td>
+<td style="text-align:left;">
+0.0472156906085414
+</td>
+<td style="text-align:right;">
+0.8738111
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="top-features" class="section level3">
+<h3><span class="header-section-number">2.1.3</span> Top Features</h3>
+</div>
+</div>
+<div id="meq" class="section level2">
+<h2><span class="header-section-number">2.2</span> MEQ</h2>
+<div id="one-way-1" class="section level3">
+<h3><span class="header-section-number">2.2.1</span> One-Way</h3>
+</div>
+<div id="two-way-1" class="section level3">
+<h3><span class="header-section-number">2.2.2</span> Two-Way</h3>
+</div>
+<div id="top-features-1" class="section level3">
+<h3><span class="header-section-number">2.2.3</span> Top Features</h3>
+</div>
+</div>
+<div id="stai" class="section level2">
+<h2><span class="header-section-number">2.3</span> STAI</h2>
+<div id="one-way-2" class="section level3">
+<h3><span class="header-section-number">2.3.1</span> One-Way</h3>
+</div>
+<div id="two-way-2" class="section level3">
+<h3><span class="header-section-number">2.3.2</span> Two-Way</h3>
+</div>
+<div id="top-features-2" class="section level3">
+<h3><span class="header-section-number">2.3.3</span> Top Features</h3>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["statistical-analysis.pdf", "statistical-analysis.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

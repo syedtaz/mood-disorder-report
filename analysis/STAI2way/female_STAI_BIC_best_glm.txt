@@ -1,0 +1,14 @@
+BIC with STAI and female
+Fitting algorithm:  BIC-leaps
+Best Model:
+            df deviance
+Null Model 214 39.90698
+Full Model 216 44.28571
+
+	likelihood-ratio test - GLM
+
+data:  H0: Null Model vs. H1: Best Fit BIC-leaps
+X = 4.3787, df = 2, p-value = 0.112
+
+ (Intercept) CRY2VNTRGGAB          AGE 
+   1.0386895   -0.2695956   -5.4976459 
