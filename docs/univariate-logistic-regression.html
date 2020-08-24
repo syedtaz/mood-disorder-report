@@ -24,7 +24,7 @@
 <meta name="author" content="Tazmilur Saad" />
 
 
-<meta name="date" content="2020-08-23" />
+<meta name="date" content="2020-08-24" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -90,6 +90,7 @@
 <li class="chapter" data-level="2.3.2" data-path="univariate-logistic-regression.html"><a href="univariate-logistic-regression.html#two-way-2"><i class="fa fa-check"></i><b>2.3.2</b> Two-Way</a></li>
 <li class="chapter" data-level="2.3.3" data-path="univariate-logistic-regression.html"><a href="univariate-logistic-regression.html#top-features-2"><i class="fa fa-check"></i><b>2.3.3</b> Top Features</a></li>
 </ul></li>
+<li class="chapter" data-level="2.4" data-path="univariate-logistic-regression.html"><a href="univariate-logistic-regression.html#summary"><i class="fa fa-check"></i><b>2.4</b> Summary</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
@@ -118,9 +119,10 @@
 <h2><span class="header-section-number">2.1</span> BDI</h2>
 <div id="one-way" class="section level3">
 <h3><span class="header-section-number">2.1.1</span> One-Way</h3>
-<table class="table table-striped table-hover table-condensed" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+<p>For the one-way analysis — we see CRY2AA appear in the univariate analysis for the combined genders as well as the male and female cases. SOCIO and CRY2GG also appear for the combined case and the female case, whereas GENDER is significant in the combined case as well.</p>
+<table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
 <caption style="font-size: initial !important;">
-<span id="tab:unnamed-chunk-3">Table 2.1: </span>Potentially Significant Univariate LR Results from 1-way BDI with combined genders.
+<span id="tab:unnamed-chunk-5">Table 2.1: </span>Potentially Significant Univariate LR Results from 1-way BDI with combined genders.
 </caption>
 <thead>
 <tr>
@@ -241,9 +243,9 @@ CRY2GG
 </tr>
 </tbody>
 </table>
-<table class="table table-striped table-hover table-condensed" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+<table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
 <caption style="font-size: initial !important;">
-<span id="tab:unnamed-chunk-4">Table 2.2: </span>Potentially Significant Univariate LR Results from 1-way BDI with males.
+<span id="tab:unnamed-chunk-6">Table 2.2: </span>Potentially Significant Univariate LR Results from 1-way BDI with males.
 </caption>
 <thead>
 <tr>
@@ -272,9 +274,9 @@ Adjusted_P
 </tr>
 </tbody>
 </table>
-<table class="table table-striped table-hover table-condensed" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+<table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
 <caption style="font-size: initial !important;">
-<span id="tab:unnamed-chunk-5">Table 2.3: </span>Potentially Significant Univariate LR Results from 1-way BDI with females.
+<span id="tab:unnamed-chunk-7">Table 2.3: </span>Potentially Significant Univariate LR Results from 1-way BDI with females.
 </caption>
 <thead>
 <tr>
@@ -352,9 +354,10 @@ CRY2AA
 </div>
 <div id="two-way" class="section level3">
 <h3><span class="header-section-number">2.1.2</span> Two-Way</h3>
-<table class="table table-striped table-hover table-condensed" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+<p>The two-way univariate analysis has a lot more genes that pop up as a potentially significant case. Note that CRY2AA appears as significant in almost all of the cases. A huge proportion of the features do have CRY2 as a component of their genetic combination. Clinical features such as GENDER and SOCIO are also likely candidates for some of these datasets. Note that none of the features are significant after adjustment, which may be due to the large number of multiple tests we had to do.</p>
+<table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
 <caption style="font-size: initial !important;">
-<span id="tab:unnamed-chunk-7">Table 2.4: </span>Potentially Significant Univariate LR Results from 2-way BDI with combined genders.
+<span id="tab:unnamed-chunk-9">Table 2.4: </span>Potentially Significant Univariate LR Results from 2-way BDI with combined genders.
 </caption>
 <thead>
 <tr>
@@ -843,9 +846,9 @@ PER3ACRY2CGGG
 </tr>
 </tbody>
 </table>
-<table class="table table-striped table-hover table-condensed" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+<table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
 <caption style="font-size: initial !important;">
-<span id="tab:unnamed-chunk-8">Table 2.5: </span>Potentially Significant Univariate LR Results from 2-way BDI with males.
+<span id="tab:unnamed-chunk-10">Table 2.5: </span>Potentially Significant Univariate LR Results from 2-way BDI with males.
 </caption>
 <thead>
 <tr>
@@ -874,9 +877,9 @@ Adjusted_P
 </tr>
 </tbody>
 </table>
-<table class="table table-striped table-hover table-condensed" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+<table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
 <caption style="font-size: initial !important;">
-<span id="tab:unnamed-chunk-9">Table 2.6: </span>Potentially Significant Univariate LR Results from 2-way BDI with females.
+<span id="tab:unnamed-chunk-11">Table 2.6: </span>Potentially Significant Univariate LR Results from 2-way BDI with females.
 </caption>
 <thead>
 <tr>
@@ -1069,32 +1072,2141 @@ PER3CCRY2GTGG
 </div>
 <div id="top-features" class="section level3">
 <h3><span class="header-section-number">2.1.3</span> Top Features</h3>
+<p>From the top-10 and top-20 features collected from upto 5-way interactions, only GENDER is significant before and after adjustment in the top-10 case. However, there are a couple of more features that may be significant or interesting.</p>
+<table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:unnamed-chunk-13">Table 2.7: </span> Potentially Significant Univariate LR Results from top-10 feature dataset.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:left;">
+Variable_Name
+</th>
+<th style="text-align:left;">
+Odds_Ratio
+</th>
+<th style="text-align:left;">
+Conf_25
+</th>
+<th style="text-align:left;">
+Conf_75
+</th>
+<th style="text-align:left;">
+P_Value
+</th>
+<th style="text-align:right;">
+Adjusted_P
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+4
+</td>
+<td style="text-align:left;">
+GENDER
+</td>
+<td style="text-align:left;">
+0.32028265851795
+</td>
+<td style="text-align:left;">
+0.160019629280375
+</td>
+<td style="text-align:left;">
+0.600969817821353
+</td>
+<td style="text-align:left;">
+0.000682538309461085
+</td>
+<td style="text-align:right;">
+0.0075079
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+10
+</td>
+<td style="text-align:left;">
+PER2PER3APER3BPER3CCRY1GGCCGGTTCG
+</td>
+<td style="text-align:left;">
+4.89743589742664
+</td>
+<td style="text-align:left;">
+1.83427905172937
+</td>
+<td style="text-align:left;">
+14.4960319491415
+</td>
+<td style="text-align:left;">
+0.00215104682077795
+</td>
+<td style="text-align:right;">
+0.0118308
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+2
+</td>
+<td style="text-align:left;">
+PER2PER3APER3CCRY1CRY2GGCCTTCGAG
+</td>
+<td style="text-align:left;">
+19.1219511908471
+</td>
+<td style="text-align:left;">
+3.43082561214219
+</td>
+<td style="text-align:left;">
+357.592008400527
+</td>
+<td style="text-align:left;">
+0.00576251436242856
+</td>
+<td style="text-align:right;">
+0.0208162
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+5
+</td>
+<td style="text-align:left;">
+PER2PER3BPER3CCLOCK3111VNTRAGGGTTTCAB
+</td>
+<td style="text-align:left;">
+6.30894308940634
+</td>
+<td style="text-align:left;">
+1.77563583009101
+</td>
+<td style="text-align:left;">
+29.351366648212
+</td>
+<td style="text-align:left;">
+0.00756953663478666
+</td>
+<td style="text-align:right;">
+0.0208162
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+6
+</td>
+<td style="text-align:left;">
+PER3BCLOCK3111CRY1AGTTCG
+</td>
+<td style="text-align:left;">
+13.9999999999828
+</td>
+<td style="text-align:left;">
+2.34274897517304
+</td>
+<td style="text-align:left;">
+266.569370403506
+</td>
+<td style="text-align:left;">
+0.0152798722083056
+</td>
+<td style="text-align:right;">
+0.0336157
+</td>
+</tr>
+</tbody>
+</table>
+<table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:unnamed-chunk-14">Table 2.8: </span> Potentially Significant Univariate LR Results from top-20 feature dataset.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:left;">
+Variable_Name
+</th>
+<th style="text-align:left;">
+Odds_Ratio
+</th>
+<th style="text-align:left;">
+Conf_25
+</th>
+<th style="text-align:left;">
+Conf_75
+</th>
+<th style="text-align:left;">
+P_Value
+</th>
+<th style="text-align:right;">
+Adjusted_P
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+4
+</td>
+<td style="text-align:left;">
+GENDER
+</td>
+<td style="text-align:left;">
+0.32028265851795
+</td>
+<td style="text-align:left;">
+0.160019629280375
+</td>
+<td style="text-align:left;">
+0.600969817821353
+</td>
+<td style="text-align:left;">
+0.000682538309461085
+</td>
+<td style="text-align:right;">
+0.0143333
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+11
+</td>
+<td style="text-align:left;">
+PER3ACRY1CRY2VNTRCCCGAGAA
+</td>
+<td style="text-align:left;">
+6.7183544303496
+</td>
+<td style="text-align:left;">
+2.22405708836326
+</td>
+<td style="text-align:left;">
+24.8191621622805
+</td>
+<td style="text-align:left;">
+0.00147136214125982
+</td>
+<td style="text-align:right;">
+0.0150573
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+10
+</td>
+<td style="text-align:left;">
+PER2PER3APER3BPER3CCRY1GGCCGGTTCG
+</td>
+<td style="text-align:left;">
+4.89743589742664
+</td>
+<td style="text-align:left;">
+1.83427905172937
+</td>
+<td style="text-align:left;">
+14.4960319491415
+</td>
+<td style="text-align:left;">
+0.00215104682077795
+</td>
+<td style="text-align:right;">
+0.0150573
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+19
+</td>
+<td style="text-align:left;">
+PER2PER3CCRY1CRY2GGTTCGAG
+</td>
+<td style="text-align:left;">
+7.18518518515352
+</td>
+<td style="text-align:left;">
+2.08344721203078
+</td>
+<td style="text-align:left;">
+33.005484663653
+</td>
+<td style="text-align:left;">
+0.00371425365734216
+</td>
+<td style="text-align:right;">
+0.0194998
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+16
+</td>
+<td style="text-align:left;">
+PER3ACLOCK3111CRY1CRY2VNTRCCTTCGAGAA
+</td>
+<td style="text-align:left;">
+9.51219512193652
+</td>
+<td style="text-align:left;">
+2.323617021631
+</td>
+<td style="text-align:left;">
+63.9314879820481
+</td>
+<td style="text-align:left;">
+0.00494458203865658
+</td>
+<td style="text-align:right;">
+0.0201688
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+2
+</td>
+<td style="text-align:left;">
+PER2PER3APER3CCRY1CRY2GGCCTTCGAG
+</td>
+<td style="text-align:left;">
+19.1219511908471
+</td>
+<td style="text-align:left;">
+3.43082561214219
+</td>
+<td style="text-align:left;">
+357.592008400527
+</td>
+<td style="text-align:left;">
+0.00576251436242856
+</td>
+<td style="text-align:right;">
+0.0201688
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+5
+</td>
+<td style="text-align:left;">
+PER2PER3BPER3CCLOCK3111VNTRAGGGTTTCAB
+</td>
+<td style="text-align:left;">
+6.30894308940634
+</td>
+<td style="text-align:left;">
+1.77563583009101
+</td>
+<td style="text-align:left;">
+29.351366648212
+</td>
+<td style="text-align:left;">
+0.00756953663478666
+</td>
+<td style="text-align:right;">
+0.0227086
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+6
+</td>
+<td style="text-align:left;">
+PER3BCLOCK3111CRY1AGTTCG
+</td>
+<td style="text-align:left;">
+13.9999999999828
+</td>
+<td style="text-align:left;">
+2.34274897517304
+</td>
+<td style="text-align:left;">
+266.569370403506
+</td>
+<td style="text-align:left;">
+0.0152798722083056
+</td>
+<td style="text-align:right;">
+0.0356530
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+12
+</td>
+<td style="text-align:left;">
+PER2PER3ACRY1CRY2VNTRGGCCCGAGAA
+</td>
+<td style="text-align:left;">
+13.9999999999829
+</td>
+<td style="text-align:left;">
+2.34274897517304
+</td>
+<td style="text-align:left;">
+266.569370403505
+</td>
+<td style="text-align:left;">
+0.0152798722083062
+</td>
+<td style="text-align:right;">
+0.0356530
+</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 <div id="meq" class="section level2">
 <h2><span class="header-section-number">2.2</span> MEQ</h2>
+<p>For both the 1-way and 2-way cases, only AGE is significant for all variations of the dataset based on gender before adjustment (and after too, depending on the dataset). For the top-10 and top-20 datasets as well, AGE is the only factor that is significant before and after adjustment.</p>
 <div id="one-way-1" class="section level3">
 <h3><span class="header-section-number">2.2.1</span> One-Way</h3>
+<table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:unnamed-chunk-16">Table 2.9: </span>Potentially Significant Univariate LR Results from 1-way MEQ with combined genders.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Variable_Name
+</th>
+<th style="text-align:left;">
+Odds_Ratio
+</th>
+<th style="text-align:left;">
+Conf_25
+</th>
+<th style="text-align:left;">
+Conf_75
+</th>
+<th style="text-align:left;">
+P_Value
+</th>
+<th style="text-align:right;">
+Adjusted_P
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+</tr>
+</tbody>
+</table>
+<table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:unnamed-chunk-17">Table 2.10: </span>Potentially Significant Univariate LR Results from 1-way MEQ with males.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:left;">
+Variable_Name
+</th>
+<th style="text-align:left;">
+Odds_Ratio
+</th>
+<th style="text-align:left;">
+Conf_25
+</th>
+<th style="text-align:left;">
+Conf_75
+</th>
+<th style="text-align:left;">
+P_Value
+</th>
+<th style="text-align:right;">
+Adjusted_P
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+17
+</td>
+<td style="text-align:left;">
+AGE
+</td>
+<td style="text-align:left;">
+16.0000000000001
+</td>
+<td style="text-align:left;">
+1.66670030062313
+</td>
+<td style="text-align:left;">
+144.349614877031
+</td>
+<td style="text-align:left;">
+0.0107175944833377
+</td>
+<td style="text-align:right;">
+0.1929167
+</td>
+</tr>
+</tbody>
+</table>
+<table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:unnamed-chunk-18">Table 2.11: </span>Potentially Significant Univariate LR Results from 1-way MEQ with females.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:left;">
+Variable_Name
+</th>
+<th style="text-align:left;">
+Odds_Ratio
+</th>
+<th style="text-align:left;">
+Conf_25
+</th>
+<th style="text-align:left;">
+Conf_75
+</th>
+<th style="text-align:left;">
+P_Value
+</th>
+<th style="text-align:right;">
+Adjusted_P
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+18
+</td>
+<td style="text-align:left;">
+AGE
+</td>
+<td style="text-align:left;">
+10.4666665687927
+</td>
+<td style="text-align:left;">
+2.88564957994803
+</td>
+<td style="text-align:left;">
+39.7649947478488
+</td>
+<td style="text-align:left;">
+0.000334664668205348
+</td>
+<td style="text-align:right;">
+0.0063586
+</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div id="two-way-1" class="section level3">
 <h3><span class="header-section-number">2.2.2</span> Two-Way</h3>
+<p>AGE is the only feature that remains consistent: depending on your gender split for the two-way dataset you can end up with a mix of features.</p>
+<table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:unnamed-chunk-20">Table 2.12: </span>Potentially Significant Univariate LR Results from 2-way MEQ with combined genders.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Variable_Name
+</th>
+<th style="text-align:left;">
+Odds_Ratio
+</th>
+<th style="text-align:left;">
+Conf_25
+</th>
+<th style="text-align:left;">
+Conf_75
+</th>
+<th style="text-align:left;">
+P_Value
+</th>
+<th style="text-align:right;">
+Adjusted_P
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+</tr>
+</tbody>
+</table>
+<table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:unnamed-chunk-21">Table 2.13: </span>Potentially Significant Univariate LR Results from 2-way MEQ with males.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:left;">
+Variable_Name
+</th>
+<th style="text-align:left;">
+Odds_Ratio
+</th>
+<th style="text-align:left;">
+Conf_25
+</th>
+<th style="text-align:left;">
+Conf_75
+</th>
+<th style="text-align:left;">
+P_Value
+</th>
+<th style="text-align:right;">
+Adjusted_P
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+202
+</td>
+<td style="text-align:left;">
+AGE
+</td>
+<td style="text-align:left;">
+16.0000000000001
+</td>
+<td style="text-align:left;">
+1.66670030062313
+</td>
+<td style="text-align:left;">
+144.349614877031
+</td>
+<td style="text-align:left;">
+0.0107175944833377
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+</tbody>
+</table>
+<table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:unnamed-chunk-22">Table 2.14: </span>Potentially Significant Univariate LR Results from 2-way MEQ with females.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:left;">
+Variable_Name
+</th>
+<th style="text-align:left;">
+Odds_Ratio
+</th>
+<th style="text-align:left;">
+Conf_25
+</th>
+<th style="text-align:left;">
+Conf_75
+</th>
+<th style="text-align:left;">
+P_Value
+</th>
+<th style="text-align:right;">
+Adjusted_P
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+216
+</td>
+<td style="text-align:left;">
+AGE
+</td>
+<td style="text-align:left;">
+10.4666665687927
+</td>
+<td style="text-align:left;">
+2.88564957994803
+</td>
+<td style="text-align:left;">
+39.7649947478488
+</td>
+<td style="text-align:left;">
+0.000334664668205348
+</td>
+<td style="text-align:right;">
+0.0726222
+</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div id="top-features-1" class="section level3">
 <h3><span class="header-section-number">2.2.3</span> Top Features</h3>
+<table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:unnamed-chunk-24">Table 2.15: </span> Potentially Potentially Significant Univariate LR Results from top-10 feature dataset.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:left;">
+Variable_Name
+</th>
+<th style="text-align:left;">
+Odds_Ratio
+</th>
+<th style="text-align:left;">
+Conf_25
+</th>
+<th style="text-align:left;">
+Conf_75
+</th>
+<th style="text-align:left;">
+P_Value
+</th>
+<th style="text-align:right;">
+Adjusted_P
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+2
+</td>
+<td style="text-align:left;">
+PER2PER3CCLOCK3111CRY1VNTRAGTTTCGGAB
+</td>
+<td style="text-align:left;">
+0.0531914893617008
+</td>
+<td style="text-align:left;">
+0.00711230181474375
+</td>
+<td style="text-align:left;">
+0.286281520593754
+</td>
+<td style="text-align:left;">
+0.00099480211190887
+</td>
+<td style="text-align:right;">
+0.0039648
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+7
+</td>
+<td style="text-align:left;">
+PER2PER3BPER3CCLOCK3111VNTRAGGGTTTCAB
+</td>
+<td style="text-align:left;">
+0.124675324675323
+</td>
+<td style="text-align:left;">
+0.0349491623793058
+</td>
+<td style="text-align:left;">
+0.460604524579909
+</td>
+<td style="text-align:left;">
+0.00119070321045296
+</td>
+<td style="text-align:right;">
+0.0039648
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+6
+</td>
+<td style="text-align:left;">
+PER2PER3BPER3CCLOCK3111CRY1AGGGTTTCGG
+</td>
+<td style="text-align:left;">
+0.080128205128203
+</td>
+<td style="text-align:left;">
+0.0150543491411339
+</td>
+<td style="text-align:left;">
+0.382609797044746
+</td>
+<td style="text-align:left;">
+0.00144175383892068
+</td>
+<td style="text-align:right;">
+0.0039648
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+4
+</td>
+<td style="text-align:left;">
+PER2PER3BPER3CCRY2VNTRAGGGTTAGAA
+</td>
+<td style="text-align:left;">
+0.0737588666031304
+</td>
+<td style="text-align:left;">
+0.00938528327095334
+</td>
+<td style="text-align:left;">
+0.464050572720649
+</td>
+<td style="text-align:left;">
+0.00534795694360257
+</td>
+<td style="text-align:right;">
+0.0117655
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+5
+</td>
+<td style="text-align:left;">
+PER3ACLOCK3111CRY1CRY2CCCCCGGG
+</td>
+<td style="text-align:left;">
+0.0572033903880249
+</td>
+<td style="text-align:left;">
+0.00260717280918914
+</td>
+<td style="text-align:left;">
+0.615797617428247
+</td>
+<td style="text-align:left;">
+0.021187587582315
+</td>
+<td style="text-align:right;">
+0.0388439
+</td>
+</tr>
+</tbody>
+</table>
+<table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:unnamed-chunk-25">Table 2.16: </span> Potentially Potentially Significant Univariate LR Results from top-20 feature dataset.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:left;">
+Variable_Name
+</th>
+<th style="text-align:left;">
+Odds_Ratio
+</th>
+<th style="text-align:left;">
+Conf_25
+</th>
+<th style="text-align:left;">
+Conf_75
+</th>
+<th style="text-align:left;">
+P_Value
+</th>
+<th style="text-align:right;">
+Adjusted_P
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+2
+</td>
+<td style="text-align:left;">
+PER2PER3CCLOCK3111CRY1VNTRAGTTTCGGAB
+</td>
+<td style="text-align:left;">
+0.0531914893617008
+</td>
+<td style="text-align:left;">
+0.00711230181474375
+</td>
+<td style="text-align:left;">
+0.286281520593754
+</td>
+<td style="text-align:left;">
+0.00099480211190887
+</td>
+<td style="text-align:right;">
+0.0075692
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+7
+</td>
+<td style="text-align:left;">
+PER2PER3BPER3CCLOCK3111VNTRAGGGTTTCAB
+</td>
+<td style="text-align:left;">
+0.124675324675323
+</td>
+<td style="text-align:left;">
+0.0349491623793058
+</td>
+<td style="text-align:left;">
+0.460604524579909
+</td>
+<td style="text-align:left;">
+0.00119070321045296
+</td>
+<td style="text-align:right;">
+0.0075692
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+6
+</td>
+<td style="text-align:left;">
+PER2PER3BPER3CCLOCK3111CRY1AGGGTTTCGG
+</td>
+<td style="text-align:left;">
+0.080128205128203
+</td>
+<td style="text-align:left;">
+0.0150543491411339
+</td>
+<td style="text-align:left;">
+0.382609797044746
+</td>
+<td style="text-align:left;">
+0.00144175383892068
+</td>
+<td style="text-align:right;">
+0.0075692
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+19
+</td>
+<td style="text-align:left;">
+PER2CLOCK3111CRY1VNTRAGTCGGAB
+</td>
+<td style="text-align:left;">
+0.107296137339055
+</td>
+<td style="text-align:left;">
+0.0239978243294204
+</td>
+<td style="text-align:left;">
+0.478273668831195
+</td>
+<td style="text-align:left;">
+0.00248149436599743
+</td>
+<td style="text-align:right;">
+0.0104223
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+13
+</td>
+<td style="text-align:left;">
+PER2PER3CCLOCK3111CRY1CRY2AGTTTTCGAG
+</td>
+<td style="text-align:left;">
+0.134698279840099
+</td>
+<td style="text-align:left;">
+0.0334944621422769
+</td>
+<td style="text-align:left;">
+0.574019939722879
+</td>
+<td style="text-align:left;">
+0.00435275949666912
+</td>
+<td style="text-align:right;">
+0.0140384
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+14
+</td>
+<td style="text-align:left;">
+PER2PER3CCLOCK3111CRY2VNTRAGTTTTAGAA
+</td>
+<td style="text-align:left;">
+0.0737588666031301
+</td>
+<td style="text-align:left;">
+0.00938528327095336
+</td>
+<td style="text-align:left;">
+0.464050572720647
+</td>
+<td style="text-align:left;">
+0.00534795694360247
+</td>
+<td style="text-align:right;">
+0.0140384
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+4
+</td>
+<td style="text-align:left;">
+PER2PER3BPER3CCRY2VNTRAGGGTTAGAA
+</td>
+<td style="text-align:left;">
+0.0737588666031304
+</td>
+<td style="text-align:left;">
+0.00938528327095334
+</td>
+<td style="text-align:left;">
+0.464050572720649
+</td>
+<td style="text-align:left;">
+0.00534795694360257
+</td>
+<td style="text-align:right;">
+0.0140384
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+5
+</td>
+<td style="text-align:left;">
+PER3ACLOCK3111CRY1CRY2CCCCCGGG
+</td>
+<td style="text-align:left;">
+0.0572033903880249
+</td>
+<td style="text-align:left;">
+0.00260717280918914
+</td>
+<td style="text-align:left;">
+0.615797617428247
+</td>
+<td style="text-align:left;">
+0.021187587582315
+</td>
+<td style="text-align:right;">
+0.0342261
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+12
+</td>
+<td style="text-align:left;">
+PER3BCLOCK3111CRY1VNTRAGTCCGAA
+</td>
+<td style="text-align:left;">
+0.0572033903880259
+</td>
+<td style="text-align:left;">
+0.00260717280918905
+</td>
+<td style="text-align:left;">
+0.615797617428258
+</td>
+<td style="text-align:left;">
+0.0211875875823159
+</td>
+<td style="text-align:right;">
+0.0342261
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+15
+</td>
+<td style="text-align:left;">
+PER2PER3CCRY2VNTRAAGTAGAB
+</td>
+<td style="text-align:left;">
+0.0572033903880268
+</td>
+<td style="text-align:left;">
+0.00260717280918915
+</td>
+<td style="text-align:left;">
+0.615797617428234
+</td>
+<td style="text-align:left;">
+0.0211875875823163
+</td>
+<td style="text-align:right;">
+0.0342261
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+11
+</td>
+<td style="text-align:left;">
+PER2PER3CCLOCK3111CRY1AAGTTTCC
+</td>
+<td style="text-align:left;">
+0.0572033903880274
+</td>
+<td style="text-align:left;">
+0.0026071728091893
+</td>
+<td style="text-align:left;">
+0.615797617428238
+</td>
+<td style="text-align:left;">
+0.0211875875823167
+</td>
+<td style="text-align:right;">
+0.0342261
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+20
+</td>
+<td style="text-align:left;">
+PER2PER3CCLOCK3111VNTRAAGTTTAB
+</td>
+<td style="text-align:left;">
+0.0572033903880274
+</td>
+<td style="text-align:left;">
+0.0026071728091893
+</td>
+<td style="text-align:left;">
+0.615797617428239
+</td>
+<td style="text-align:left;">
+0.0211875875823168
+</td>
+<td style="text-align:right;">
+0.0342261
+</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 <div id="stai" class="section level2">
 <h2><span class="header-section-number">2.3</span> STAI</h2>
 <div id="one-way-2" class="section level3">
 <h3><span class="header-section-number">2.3.1</span> One-Way</h3>
+<p>For the 1-way analysis — in the combined and female cases AGE appears as a potentially significant feature; although it may lose this significance after adjustment. Note that CRY2AA appears for the combined and male case, but not the female.</p>
+<table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:unnamed-chunk-27">Table 2.17: </span>Potentially Significant Univariate LR Results from 1-way STAI with combined genders.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:left;">
+Variable_Name
+</th>
+<th style="text-align:left;">
+Odds_Ratio
+</th>
+<th style="text-align:left;">
+Conf_25
+</th>
+<th style="text-align:left;">
+Conf_75
+</th>
+<th style="text-align:left;">
+P_Value
+</th>
+<th style="text-align:right;">
+Adjusted_P
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+18
+</td>
+<td style="text-align:left;">
+AGE
+</td>
+<td style="text-align:left;">
+3.61111111110423
+</td>
+<td style="text-align:left;">
+1.49903148942242
+</td>
+<td style="text-align:left;">
+9.06998939490529
+</td>
+<td style="text-align:left;">
+0.00462248305421533
+</td>
+<td style="text-align:right;">
+0.0878272
+</td>
+</tr>
+</tbody>
+</table>
+<table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:unnamed-chunk-28">Table 2.18: </span>Potentially Significant Univariate LR Results from 1-way STAI with males.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Variable_Name
+</th>
+<th style="text-align:left;">
+Odds_Ratio
+</th>
+<th style="text-align:left;">
+Conf_25
+</th>
+<th style="text-align:left;">
+Conf_75
+</th>
+<th style="text-align:left;">
+P_Value
+</th>
+<th style="text-align:right;">
+Adjusted_P
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+</tr>
+</tbody>
+</table>
+<table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:unnamed-chunk-29">Table 2.19: </span>Potentially Significant Univariate LR Results from 1-way STAI with females.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:left;">
+Variable_Name
+</th>
+<th style="text-align:left;">
+Odds_Ratio
+</th>
+<th style="text-align:left;">
+Conf_25
+</th>
+<th style="text-align:left;">
+Conf_75
+</th>
+<th style="text-align:left;">
+P_Value
+</th>
+<th style="text-align:right;">
+Adjusted_P
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+18
+</td>
+<td style="text-align:left;">
+AGE
+</td>
+<td style="text-align:left;">
+4.77564102562659
+</td>
+<td style="text-align:left;">
+1.68958315629344
+</td>
+<td style="text-align:left;">
+14.6471217436825
+</td>
+<td style="text-align:left;">
+0.00384718586776604
+</td>
+<td style="text-align:right;">
+0.0730965
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+13
+</td>
+<td style="text-align:left;">
+CRY2GG
+</td>
+<td style="text-align:left;">
+0.403162055336312
+</td>
+<td style="text-align:left;">
+0.195456473459255
+</td>
+<td style="text-align:left;">
+0.823097675005418
+</td>
+<td style="text-align:left;">
+0.0129084501677496
+</td>
+<td style="text-align:right;">
+0.1226303
+</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div id="two-way-2" class="section level3">
 <h3><span class="header-section-number">2.3.2</span> Two-Way</h3>
+<p>For the two-way analysis — there are a bunch of features that pop up for the combined case, however there is an increase in the number of significant features when moving to a split female dataset. Males, however, continue to remain inconsistent and show a slight decline in the number of features found to be potentially significant relative to the other datasets. However, none of the features in any of the cases remain significant after adjustment.</p>
+<table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:unnamed-chunk-31">Table 2.20: </span>Potentially Significant Univariate LR Results from 2-way STAI with combined genders.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:left;">
+Variable_Name
+</th>
+<th style="text-align:left;">
+Odds_Ratio
+</th>
+<th style="text-align:left;">
+Conf_25
+</th>
+<th style="text-align:left;">
+Conf_75
+</th>
+<th style="text-align:left;">
+P_Value
+</th>
+<th style="text-align:right;">
+Adjusted_P
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+219
+</td>
+<td style="text-align:left;">
+AGE
+</td>
+<td style="text-align:left;">
+3.61111111110423
+</td>
+<td style="text-align:left;">
+1.49903148942242
+</td>
+<td style="text-align:left;">
+9.06998939490529
+</td>
+<td style="text-align:left;">
+0.00462248305421533
+</td>
+<td style="text-align:right;">
+0.7912667
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+50
+</td>
+<td style="text-align:left;">
+PER3APER3CCCGG
+</td>
+<td style="text-align:left;">
+0.411441647597253
+</td>
+<td style="text-align:left;">
+0.207493502821495
+</td>
+<td style="text-align:left;">
+0.814008432533842
+</td>
+<td style="text-align:left;">
+0.0105954966940332
+</td>
+<td style="text-align:right;">
+0.7912667
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+133
+</td>
+<td style="text-align:left;">
+PER3CCRY2GGAA
+</td>
+<td style="text-align:left;">
+0.229166666666667
+</td>
+<td style="text-align:left;">
+0.0719558089797864
+</td>
+<td style="text-align:left;">
+0.708876675600321
+</td>
+<td style="text-align:left;">
+0.0107900003533918
+</td>
+<td style="text-align:right;">
+0.7912667
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+138
+</td>
+<td style="text-align:left;">
+PER3CCRY2GTAA
+</td>
+<td style="text-align:left;">
+0.281249999999998
+</td>
+<td style="text-align:left;">
+0.088059512231976
+</td>
+<td style="text-align:left;">
+0.88862253564558
+</td>
+<td style="text-align:left;">
+0.0296607905328754
+</td>
+<td style="text-align:right;">
+0.9965474
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+134
+</td>
+<td style="text-align:left;">
+PER3CCRY2GGAG
+</td>
+<td style="text-align:left;">
+0.323863636363629
+</td>
+<td style="text-align:left;">
+0.112955975398312
+</td>
+<td style="text-align:left;">
+0.901148215545065
+</td>
+<td style="text-align:left;">
+0.0317108866108722
+</td>
+<td style="text-align:right;">
+0.9965474
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+174
+</td>
+<td style="text-align:left;">
+CRY1CRY2CCAA
+</td>
+<td style="text-align:left;">
+0.288888888889336
+</td>
+<td style="text-align:left;">
+0.0886834212150787
+</td>
+<td style="text-align:left;">
+0.923392100397332
+</td>
+<td style="text-align:left;">
+0.0356018248308058
+</td>
+<td style="text-align:right;">
+0.9965474
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+137
+</td>
+<td style="text-align:left;">
+PER3CCRY2GTGG
+</td>
+<td style="text-align:left;">
+0.337499999999988
+</td>
+<td style="text-align:left;">
+0.115500529086807
+</td>
+<td style="text-align:left;">
+0.964653133413597
+</td>
+<td style="text-align:left;">
+0.0427899548564615
+</td>
+<td style="text-align:right;">
+0.9965474
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+136
+</td>
+<td style="text-align:left;">
+PER3CCRY2TTAA
+</td>
+<td style="text-align:left;">
+0.387499999999874
+</td>
+<td style="text-align:left;">
+0.146235928875296
+</td>
+<td style="text-align:left;">
+0.978429533979002
+</td>
+<td style="text-align:left;">
+0.0484870830554799
+</td>
+<td style="text-align:right;">
+0.9965474
+</td>
+</tr>
+</tbody>
+</table>
+<table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:unnamed-chunk-32">Table 2.21: </span>Potentially Significant Univariate LR Results from 2-way STAI with males.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:left;">
+Variable_Name
+</th>
+<th style="text-align:left;">
+Odds_Ratio
+</th>
+<th style="text-align:left;">
+Conf_25
+</th>
+<th style="text-align:left;">
+Conf_75
+</th>
+<th style="text-align:left;">
+P_Value
+</th>
+<th style="text-align:right;">
+Adjusted_P
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+143
+</td>
+<td style="text-align:left;">
+CLOCK3111CRY2TTGG
+</td>
+<td style="text-align:left;">
+6
+</td>
+<td style="text-align:left;">
+1.20226680419606
+</td>
+<td style="text-align:left;">
+45.6107947669502
+</td>
+<td style="text-align:left;">
+0.0440343384699381
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+179
+</td>
+<td style="text-align:left;">
+CRY2VNTRAAAB
+</td>
+<td style="text-align:left;">
+0.15
+</td>
+<td style="text-align:left;">
+0.0181295666193532
+</td>
+<td style="text-align:left;">
+0.839116627674685
+</td>
+<td style="text-align:left;">
+0.0445304638531549
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+119
+</td>
+<td style="text-align:left;">
+PER3CCRY2GGAA
+</td>
+<td style="text-align:left;">
+0.120000000000473
+</td>
+<td style="text-align:left;">
+0.0116614453550483
+</td>
+<td style="text-align:left;">
+0.855916703643044
+</td>
+<td style="text-align:left;">
+0.0464103357254868
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+</tbody>
+</table>
+<table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:unnamed-chunk-33">Table 2.22: </span>Potentially Significant Univariate LR Results from 2-way STAI with females.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:left;">
+Variable_Name
+</th>
+<th style="text-align:left;">
+Odds_Ratio
+</th>
+<th style="text-align:left;">
+Conf_25
+</th>
+<th style="text-align:left;">
+Conf_75
+</th>
+<th style="text-align:left;">
+P_Value
+</th>
+<th style="text-align:right;">
+Adjusted_P
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+216
+</td>
+<td style="text-align:left;">
+AGE
+</td>
+<td style="text-align:left;">
+4.77564102562659
+</td>
+<td style="text-align:left;">
+1.68958315629344
+</td>
+<td style="text-align:left;">
+14.6471217436825
+</td>
+<td style="text-align:left;">
+0.00384718586776604
+</td>
+<td style="text-align:right;">
+0.4530653
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+134
+</td>
+<td style="text-align:left;">
+PER3CCRY2GTGG
+</td>
+<td style="text-align:left;">
+0.157894736842249
+</td>
+<td style="text-align:left;">
+0.0421911026763544
+</td>
+<td style="text-align:left;">
+0.543287744316711
+</td>
+<td style="text-align:left;">
+0.00417571681382988
+</td>
+<td style="text-align:right;">
+0.4530653
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+198
+</td>
+<td style="text-align:left;">
+CRY2GG
+</td>
+<td style="text-align:left;">
+0.403162055336312
+</td>
+<td style="text-align:left;">
+0.195456473459255
+</td>
+<td style="text-align:left;">
+0.823097675005418
+</td>
+<td style="text-align:left;">
+0.0129084501677496
+</td>
+<td style="text-align:right;">
+0.7264462
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+100
+</td>
+<td style="text-align:left;">
+PER3BCRY2GGGG
+</td>
+<td style="text-align:left;">
+0.385854341736695
+</td>
+<td style="text-align:left;">
+0.179168696750719
+</td>
+<td style="text-align:left;">
+0.820564500747823
+</td>
+<td style="text-align:left;">
+0.0137616799651241
+</td>
+<td style="text-align:right;">
+0.7264462
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+176
+</td>
+<td style="text-align:left;">
+CRY1CRY2CGGG
+</td>
+<td style="text-align:left;">
+0.276507276507276
+</td>
+<td style="text-align:left;">
+0.0902089700528395
+</td>
+<td style="text-align:left;">
+0.788357554340751
+</td>
+<td style="text-align:left;">
+0.018812660305564
+</td>
+<td style="text-align:right;">
+0.7264462
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+50
+</td>
+<td style="text-align:left;">
+PER3APER3CCCGG
+</td>
+<td style="text-align:left;">
+0.390202702702704
+</td>
+<td style="text-align:left;">
+0.173450207292204
+</td>
+<td style="text-align:left;">
+0.876512439432656
+</td>
+<td style="text-align:left;">
+0.022100911559844
+</td>
+<td style="text-align:right;">
+0.7264462
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+188
+</td>
+<td style="text-align:left;">
+CRY2VNTRGGAB
+</td>
+<td style="text-align:left;">
+0.266666666666836
+</td>
+<td style="text-align:left;">
+0.0819092699336957
+</td>
+<td style="text-align:left;">
+0.821822653094068
+</td>
+<td style="text-align:left;">
+0.0234337492042986
+</td>
+<td style="text-align:right;">
+0.7264462
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+173
+</td>
+<td style="text-align:left;">
+CRY1CRY2GGGG
+</td>
+<td style="text-align:left;">
+0.243243243243244
+</td>
+<td style="text-align:left;">
+0.0656924246446304
+</td>
+<td style="text-align:left;">
+0.870852742506329
+</td>
+<td style="text-align:left;">
+0.0298979123812824
+</td>
+<td style="text-align:right;">
+0.8109809
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+131
+</td>
+<td style="text-align:left;">
+PER3CCRY2GGAG
+</td>
+<td style="text-align:left;">
+0.276315789473931
+</td>
+<td style="text-align:left;">
+0.0777633067616263
+</td>
+<td style="text-align:left;">
+0.929010898943281
+</td>
+<td style="text-align:left;">
+0.0392893656380092
+</td>
+<td style="text-align:right;">
+0.8447955
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+132
+</td>
+<td style="text-align:left;">
+PER3CCRY2TTGG
+</td>
+<td style="text-align:left;">
+0.298245614035335
+</td>
+<td style="text-align:left;">
+0.0871635180017422
+</td>
+<td style="text-align:left;">
+0.95544390728127
+</td>
+<td style="text-align:left;">
+0.0446138541216921
+</td>
+<td style="text-align:right;">
+0.8447955
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+32
+</td>
+<td style="text-align:left;">
+PER2CRY2GGGG
+</td>
+<td style="text-align:left;">
+0.330578512397407
+</td>
+<td style="text-align:left;">
+0.109357645338649
+</td>
+<td style="text-align:left;">
+0.967465493872079
+</td>
+<td style="text-align:left;">
+0.0448779887850668
+</td>
+<td style="text-align:right;">
+0.8447955
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+123
+</td>
+<td style="text-align:left;">
+PER3CCRY1GGCG
+</td>
+<td style="text-align:left;">
+0.266666666666666
+</td>
+<td style="text-align:left;">
+0.0709621925222701
+</td>
+<td style="text-align:left;">
+0.996745638147611
+</td>
+<td style="text-align:left;">
+0.046716803023347
+</td>
+<td style="text-align:right;">
+0.8447955
+</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div id="top-features-2" class="section level3">
 <h3><span class="header-section-number">2.3.3</span> Top Features</h3>
-
+<p>For the top-10 and top-20 datasets as well, AGE is the only factor that is significant before and after adjustment.</p>
+<table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:unnamed-chunk-35">Table 2.23: </span> Potentially Potentially Significant Univariate LR Results from top-10 feature dataset.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:left;">
+Variable_Name
+</th>
+<th style="text-align:left;">
+Odds_Ratio
+</th>
+<th style="text-align:left;">
+Conf_25
+</th>
+<th style="text-align:left;">
+Conf_75
+</th>
+<th style="text-align:left;">
+P_Value
+</th>
+<th style="text-align:right;">
+Adjusted_P
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+10
+</td>
+<td style="text-align:left;">
+PER2PER3APER3BPER3CCLOCK3111AGCCGGGTTC
+</td>
+<td style="text-align:left;">
+0.154733009709382
+</td>
+<td style="text-align:left;">
+0.033285386186221
+</td>
+<td style="text-align:left;">
+0.549151977964257
+</td>
+<td style="text-align:left;">
+0.00677525287365936
+</td>
+<td style="text-align:right;">
+0.0745278
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+5
+</td>
+<td style="text-align:left;">
+PER2PER3CCLOCK3111VNTRAGGGTTAB
+</td>
+<td style="text-align:left;">
+0.0697115384616426
+</td>
+<td style="text-align:left;">
+0.0036624294029539
+</td>
+<td style="text-align:left;">
+0.416235179353938
+</td>
+<td style="text-align:left;">
+0.0143344663707046
+</td>
+<td style="text-align:right;">
+0.0788396
+</td>
+</tr>
+</tbody>
+</table>
+<table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:unnamed-chunk-36">Table 2.24: </span> Potentially Potentially Significant Univariate LR Results from top-20 feature dataset.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:left;">
+Variable_Name
+</th>
+<th style="text-align:left;">
+Odds_Ratio
+</th>
+<th style="text-align:left;">
+Conf_25
+</th>
+<th style="text-align:left;">
+Conf_75
+</th>
+<th style="text-align:left;">
+P_Value
+</th>
+<th style="text-align:right;">
+Adjusted_P
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+10
+</td>
+<td style="text-align:left;">
+PER2PER3APER3BPER3CCLOCK3111AGCCGGGTTC
+</td>
+<td style="text-align:left;">
+0.154733009709382
+</td>
+<td style="text-align:left;">
+0.033285386186221
+</td>
+<td style="text-align:left;">
+0.549151977964257
+</td>
+<td style="text-align:left;">
+0.00677525287365936
+</td>
+<td style="text-align:right;">
+0.1003413
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+5
+</td>
+<td style="text-align:left;">
+PER2PER3CCLOCK3111VNTRAGGGTTAB
+</td>
+<td style="text-align:left;">
+0.0697115384616426
+</td>
+<td style="text-align:left;">
+0.0036624294029539
+</td>
+<td style="text-align:left;">
+0.416235179353938
+</td>
+<td style="text-align:left;">
+0.0143344663707046
+</td>
+<td style="text-align:right;">
+0.1003413
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+14
+</td>
+<td style="text-align:left;">
+PER2PER3BPER3CCLOCK3111VNTRAGGGGGTTAB
+</td>
+<td style="text-align:left;">
+0.0697115384616426
+</td>
+<td style="text-align:left;">
+0.0036624294029539
+</td>
+<td style="text-align:left;">
+0.416235179353938
+</td>
+<td style="text-align:left;">
+0.0143344663707046
+</td>
+<td style="text-align:right;">
+0.1003413
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+17
+</td>
+<td style="text-align:left;">
+PER3APER3BPER3CCRY2VNTRCCGGGGAAAA
+</td>
+<td style="text-align:left;">
+0.0846153846154967
+</td>
+<td style="text-align:left;">
+0.004382598592078
+</td>
+<td style="text-align:left;">
+0.534488692193105
+</td>
+<td style="text-align:left;">
+0.0251284080884305
+</td>
+<td style="text-align:right;">
+0.1319241
+</td>
+</tr>
+</tbody>
+</table>
 </div>
+</div>
+<div id="summary" class="section level2">
+<h2><span class="header-section-number">2.4</span> Summary</h2>
+<p>Going from one-way to two-way usually results in a lot more features being found significant (except for MEQ, where the increase in number is not that high even if the p-value cutoff is set to 0.1): in the same vein, clinical features are almost always chosen and there are a few genes (for example, CRY2) present in almost all of the features found to be significant. For the top feature cases, only a single clinical feature remains significant before and after adjustment. The number of features vary from dataset to dataset, but male datasets tend to be more unstable and produce results that deviate from the female and combined cases.</p>
+
 </div>
 </div>
             </section>
