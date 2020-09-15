@@ -1,0 +1,12 @@
+BIC with MEQ and female .txt
+Fitting algorithm:  BIC-leaps
+Best Model:
+            df deviance
+Null Model 184 16202.69
+Full Model 185 18306.01
+
+	likelihood-ratio test - GLM
+
+data:  H0: Null Model vs. H1: Best Fit BIC-leaps
+X = 2103.3, df = 1, p-value < 2.2e-16
+

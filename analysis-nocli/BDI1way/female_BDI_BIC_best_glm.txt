@@ -1,0 +1,14 @@
+BIC with BDI and female
+Fitting algorithm:  BIC-leaps
+Best Model:
+            df deviance
+Null Model 204 45.99215
+Full Model 205 48.21845
+
+	likelihood-ratio test - GLM
+
+data:  H0: Null Model vs. H1: Best Fit BIC-leaps
+X = 2.2263, df = 1, p-value = 0.1357
+
+(Intercept)       SOCIO 
+  0.8449723  -8.1247728 

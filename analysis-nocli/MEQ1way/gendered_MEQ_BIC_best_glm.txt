@@ -1,0 +1,14 @@
+BIC with MEQ and gendered
+Fitting algorithm:  BIC-leaps
+Best Model:
+            df deviance
+Null Model 264 22.30545
+Full Model 265 25.83835
+
+	likelihood-ratio test - GLM
+
+data:  H0: Null Model vs. H1: Best Fit BIC-leaps
+X = 3.5329, df = 1, p-value = 0.06016
+
+(Intercept)         AGE 
+   1.202683   -5.420109 

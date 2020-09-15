@@ -1,0 +1,376 @@
+Anova of MEQ and female from file  
+             Df Sum Sq Mean Sq F value Pr(>F)  
+PER2AA        1     56    55.6   0.567 0.4523  
+PER2GG        1    326   325.6   3.324 0.0699 .
+Residuals   183  17925    97.9                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Anova of MEQ and female from file  
+             Df Sum Sq Mean Sq F value Pr(>F)
+PER3AGG       1    207  206.54   2.088  0.150
+PER3ACG       1      2    1.59   0.016  0.899
+Residuals   183  18098   98.90               
+Anova of MEQ and female from file  
+               Df Sum Sq Mean Sq F value Pr(>F)  
+PER2PER3CAAGG   1     32    31.7   0.329 0.5670  
+PER2PER3CAATT   1    180   180.4   1.873 0.1729  
+PER2PER3CAAGT   1     22    22.2   0.230 0.6319  
+PER2PER3CGGGG   1    354   354.1   3.676 0.0568 .
+PER2PER3CGGTT   1      2     1.9   0.020 0.8885  
+PER2PER3CGGGT   1    351   351.4   3.648 0.0577 .
+PER2PER3CAGGG   1    114   114.4   1.188 0.2773  
+PER2PER3CAGGT   1    203   203.0   2.108 0.1483  
+Residuals     177  17047    96.3                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Anova of MEQ and female from file  
+                   Df Sum Sq Mean Sq F value Pr(>F)  
+PER2CLOCK3111AATT   1     82   82.35   0.835 0.3621  
+PER2CLOCK3111AACC   1     32   31.88   0.323 0.5704  
+PER2CLOCK3111AATC   1      3    2.64   0.027 0.8703  
+PER2CLOCK3111GGTT   1    206  206.31   2.091 0.1499  
+PER2CLOCK3111GGCC   1    113  113.39   1.149 0.2852  
+PER2CLOCK3111GGTC   1    280  280.34   2.842 0.0936 .
+PER2CLOCK3111AGCC   1    124  124.23   1.259 0.2633  
+PER2CLOCK3111AGTC   1      3    2.72   0.028 0.8683  
+Residuals         177  17462   98.66                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Anova of MEQ and female from file  
+              Df Sum Sq Mean Sq F value Pr(>F)  
+PER2CRY1AACC   1      0     0.3   0.003 0.9541  
+PER2CRY1AAGG   1    193   192.6   1.954 0.1639  
+PER2CRY1AACG   1     10     9.7   0.099 0.7536  
+PER2CRY1GGCC   1    317   316.9   3.215 0.0747 .
+PER2CRY1GGGG   1     73    73.1   0.741 0.3905  
+PER2CRY1GGCG   1     83    82.9   0.841 0.3603  
+PER2CRY1AGCC   1    176   176.1   1.786 0.1832  
+PER2CRY1AGGG   1      3     3.4   0.035 0.8523  
+Residuals    177  17451    98.6                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Anova of MEQ and female from file  
+              Df Sum Sq Mean Sq F value Pr(>F)
+PER2CRY2AAGG   1     35   34.55   0.345  0.558
+PER2CRY2AAAA   1    113  112.94   1.128  0.290
+PER2CRY2AAAG   1     22   21.98   0.220  0.640
+PER2CRY2GGGG   1    190  189.84   1.897  0.170
+PER2CRY2GGAA   1     18   17.75   0.177  0.674
+PER2CRY2GGAG   1    173  172.95   1.728  0.190
+PER2CRY2AGGG   1      8    7.94   0.079  0.778
+PER2CRY2AGAA   1     31   31.45   0.314  0.576
+Residuals    177  17717  100.09               
+Anova of MEQ and female from file  
+              Df Sum Sq Mean Sq F value Pr(>F)  
+PER2VNTRAAAA   1     10     9.8   0.100 0.7523  
+PER2VNTRAABB   1    147   147.3   1.503 0.2218  
+PER2VNTRAAAB   1      0     0.4   0.004 0.9511  
+PER2VNTRGGAA   1     81    81.0   0.826 0.3646  
+PER2VNTRGGBB   1     24    24.1   0.246 0.6207  
+PER2VNTRGGAB   1    300   300.2   3.063 0.0818 .
+PER2VNTRAGBB   1    382   381.6   3.894 0.0500 .
+PER2VNTRAGAB   1     15    15.2   0.155 0.6946  
+Residuals    177  17347    98.0                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Anova of MEQ and female from file  
+                Df Sum Sq Mean Sq F value Pr(>F)
+PER3APER3BCCAA   1    140  139.52   1.422  0.235
+PER3APER3BCCAG   1    113  112.77   1.149  0.285
+PER3APER3BGGGG   1    213  212.69   2.167  0.143
+PER3APER3BCGGG   1      4    3.82   0.039  0.844
+PER3APER3BCGAG   1    172  172.14   1.754  0.187
+Residuals      180  17665   98.14               
+Anova of MEQ and female from file  
+                Df Sum Sq Mean Sq F value Pr(>F)
+PER3APER3CCCGG   1     21   20.76   0.207  0.650
+PER3APER3CCCGT   1     48   48.25   0.480  0.489
+PER3APER3CGGGG   1    193  193.35   1.924  0.167
+PER3APER3CCGGG   1     40   39.73   0.395  0.530
+PER3APER3CCGTT   1      4    4.11   0.041  0.840
+PER3APER3CCGGT   1      7    7.14   0.071  0.790
+Residuals      179  17993  100.52               
+Anova of MEQ and female from file  
+                    Df Sum Sq Mean Sq F value Pr(>F)
+PER3ACLOCK3111CCCC   1    164  164.37   1.654  0.200
+PER3ACLOCK3111CCTC   1      6    5.64   0.057  0.812
+PER3ACLOCK3111GGTT   1    196  195.92   1.971  0.162
+PER3ACLOCK3111CGTT   1      2    1.70   0.017  0.896
+PER3ACLOCK3111CGCC   1    121  121.04   1.218  0.271
+PER3ACLOCK3111CGTC   1     27   27.28   0.274  0.601
+Residuals          179  17790   99.39               
+Anova of MEQ and female from file  
+               Df Sum Sq Mean Sq F value Pr(>F)
+PER3ACRY1CCCC   1    222  222.27   2.245  0.136
+PER3ACRY1CCGG   1     68   67.54   0.682  0.410
+PER3ACRY1GGCG   1    239  239.09   2.415  0.122
+PER3ACRY1CGCC   1     12   12.26   0.124  0.725
+PER3ACRY1CGGG   1     26   25.73   0.260  0.611
+PER3ACRY1CGCG   1     19   19.10   0.193  0.661
+Residuals     179  17720   98.99               
+Anova of MEQ and female from file  
+               Df Sum Sq Mean Sq F value Pr(>F)
+PER3ACRY2CCGG   1      0    0.25   0.002  0.960
+PER3ACRY2CCAA   1     18   17.97   0.181  0.671
+PER3ACRY2GGAA   1    201  201.24   2.023  0.157
+PER3ACRY2CGGG   1     28   28.37   0.285  0.594
+PER3ACRY2CGAA   1    212  212.19   2.133  0.146
+PER3ACRY2CGAG   1     36   36.29   0.365  0.547
+Residuals     179  17810   99.50               
+Anova of MEQ and female from file  
+             Df Sum Sq Mean Sq F value Pr(>F)
+PER3BAA       1    140  139.52   1.421  0.235
+PER3BAG       1    198  198.01   2.017  0.157
+Residuals   183  17968   98.19               
+Anova of MEQ and female from file  
+               Df Sum Sq Mean Sq F value Pr(>F)
+PER3AVNTRCCBB   1    253  253.20   2.584  0.110
+PER3AVNTRCCAB   1      2    1.99   0.020  0.887
+PER3AVNTRGGAA   1    222  221.63   2.262  0.134
+PER3AVNTRCGAA   1    136  136.47   1.393  0.240
+PER3AVNTRCGBB   1      2    2.05   0.021  0.885
+PER3AVNTRCGAB   1    150  149.81   1.529  0.218
+Residuals     179  17541   97.99               
+Anova of MEQ and female from file  
+                Df Sum Sq Mean Sq F value Pr(>F)
+PER3BPER3CGGGG   1      0    0.00   0.000  0.997
+PER3BPER3CGGGT   1     38   38.20   0.383  0.537
+PER3BPER3CAATT   1    152  151.66   1.520  0.219
+PER3BPER3CAGGG   1      1    0.70   0.007  0.934
+PER3BPER3CAGTT   1    253  253.37   2.539  0.113
+PER3BPER3CAGGT   1      0    0.18   0.002  0.966
+Residuals      179  17862   99.79               
+Anova of MEQ and female from file  
+                    Df Sum Sq Mean Sq F value Pr(>F)  
+PER3BCLOCK3111GGCC   1    274   274.1   2.809 0.0955 .
+PER3BCLOCK3111GGTC   1     33    33.0   0.338 0.5616  
+PER3BCLOCK3111AATT   1    417   417.2   4.275 0.0401 *
+PER3BCLOCK3111AATC   1      5     4.6   0.047 0.8292  
+PER3BCLOCK3111AGTT   1     52    51.9   0.531 0.4670  
+PER3BCLOCK3111AGTC   1     58    57.5   0.589 0.4436  
+Residuals          179  17468    97.6                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Anova of MEQ and female from file  
+               Df Sum Sq Mean Sq F value Pr(>F)  
+PER3BCRY1GGCC   1    109  109.27   1.110 0.2936  
+PER3BCRY1GGGG   1      4    4.45   0.045 0.8319  
+PER3BCRY1AAGG   1    125  124.61   1.265 0.2621  
+PER3BCRY1AGCC   1    168  168.07   1.707 0.1931  
+PER3BCRY1AGGG   1    270  269.74   2.739 0.0997 .
+PER3BCRY1AGCG   1      3    3.36   0.034 0.8536  
+Residuals     179  17627   98.47                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Anova of MEQ and female from file  
+               Df Sum Sq Mean Sq F value Pr(>F)  
+PER3BCRY2GGGG   1      0     0.1   0.001 0.9714  
+PER3BCRY2GGAA   1     39    38.8   0.398 0.5289  
+PER3BCRY2AAGG   1     11    11.2   0.115 0.7352  
+PER3BCRY2AAAA   1    375   375.4   3.854 0.0512 .
+PER3BCRY2AGGG   1     25    25.1   0.258 0.6120  
+PER3BCRY2AGAA   1     13    13.4   0.138 0.7107  
+PER3BCRY2AGAG   1    505   504.7   5.182 0.0240 *
+Residuals     178  17337    97.4                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Anova of MEQ and female from file  
+               Df Sum Sq Mean Sq F value Pr(>F)  
+PER3BVNTRGGBB   1    189   189.1   1.944 0.1650  
+PER3BVNTRGGAB   1    148   148.4   1.525 0.2185  
+PER3BVNTRAAAA   1    159   159.1   1.635 0.2026  
+PER3BVNTRAGAA   1      3     2.8   0.029 0.8649  
+PER3BVNTRAGBB   1     63    63.0   0.647 0.4222  
+PER3BVNTRAGAB   1    326   326.1   3.352 0.0688 .
+Residuals     179  17417    97.3                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Anova of MEQ and female from file  
+                    Df Sum Sq Mean Sq F value Pr(>F)  
+PER3CCLOCK3111GGTT   1     17    16.7   0.166 0.6841  
+PER3CCLOCK3111GGCC   1     20    19.6   0.195 0.6593  
+PER3CCLOCK3111GGTC   1      6     5.6   0.056 0.8132  
+PER3CCLOCK3111TTCC   1    326   325.9   3.238 0.0737 .
+PER3CCLOCK3111TTTC   1      2     2.0   0.020 0.8889  
+PER3CCLOCK3111GTTT   1     49    49.0   0.487 0.4863  
+PER3CCLOCK3111GTCC   1     68    68.1   0.676 0.4119  
+PER3CCLOCK3111GTTC   1      4     3.9   0.039 0.8439  
+Residuals          177  17815   100.7                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Anova of MEQ and female from file  
+               Df Sum Sq Mean Sq F value Pr(>F)
+PER3CCRY1GGCC   1    104  104.42   1.048  0.307
+PER3CCRY1GGGG   1      5    4.92   0.049  0.824
+PER3CCRY1GGCG   1    108  108.20   1.086  0.299
+PER3CCRY1TTCC   1    146  146.25   1.468  0.227
+PER3CCRY1TTGG   1      2    1.72   0.017  0.895
+PER3CCRY1GTCC   1      5    5.31   0.053  0.818
+PER3CCRY1GTGG   1    164  163.63   1.642  0.202
+PER3CCRY1GTCG   1    133  133.43   1.339  0.249
+Residuals     177  17638   99.65               
+Anova of MEQ and female from file  
+               Df Sum Sq Mean Sq F value Pr(>F)  
+PER3CCRY2GGGG   1     21   21.34   0.215 0.6435  
+PER3CCRY2GGAA   1     53   52.96   0.533 0.4662  
+PER3CCRY2GGAG   1     53   53.37   0.537 0.4645  
+PER3CCRY2TTGG   1     83   83.02   0.836 0.3618  
+PER3CCRY2TTAA   1     64   63.53   0.640 0.4249  
+PER3CCRY2GTGG   1    279  279.37   2.813 0.0953 .
+PER3CCRY2GTAA   1     60   60.07   0.605 0.4378  
+PER3CCRY2GTAG   1    113  112.99   1.138 0.2876  
+Residuals     177  17579   99.32                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Anova of MEQ and female from file  
+               Df Sum Sq Mean Sq F value Pr(>F)  
+PER3CVNTRGGAA   1     87    87.5   0.892 0.3462  
+PER3CVNTRGGBB   1     44    43.9   0.447 0.5045  
+PER3CVNTRGGAB   1      9     9.3   0.095 0.7578  
+PER3CVNTRTTBB   1    290   290.5   2.963 0.0869 .
+PER3CVNTRTTAB   1     14    14.1   0.144 0.7050  
+PER3CVNTRGTAA   1      7     7.0   0.072 0.7894  
+PER3CVNTRGTBB   1    447   447.5   4.564 0.0340 *
+PER3CVNTRGTAB   1     54    54.2   0.553 0.4583  
+Residuals     177  17352    98.0                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Anova of MEQ and female from file  
+             Df Sum Sq Mean Sq F value Pr(>F)
+PER3CGG       1      0    0.40   0.004  0.949
+PER3CGT       1     38   38.10   0.382  0.537
+Residuals   183  18268   99.82               
+Anova of MEQ and female from file  
+                   Df Sum Sq Mean Sq F value Pr(>F)
+CLOCK3111CRY1TTCC   1    215  214.59   2.145  0.145
+CLOCK3111CRY1TTGG   1     80   79.77   0.797  0.373
+CLOCK3111CRY1CCCC   1      1    0.87   0.009  0.926
+CLOCK3111CRY1CCGG   1     28   27.61   0.276  0.600
+CLOCK3111CRY1CCCG   1    188  188.02   1.880  0.172
+CLOCK3111CRY1TCCC   1     54   53.90   0.539  0.464
+CLOCK3111CRY1TCGG   1     18   17.68   0.177  0.675
+CLOCK3111CRY1TCCG   1     18   17.50   0.175  0.676
+Residuals         177  17706  100.03               
+Anova of MEQ and female from file  
+                   Df Sum Sq Mean Sq F value Pr(>F)  
+CLOCK3111CRY2TTGG   1      1     1.0   0.011  0.918  
+CLOCK3111CRY2TTAA   1    265   265.4   2.724  0.101  
+CLOCK3111CRY2CCGG   1    472   472.2   4.846  0.029 *
+CLOCK3111CRY2CCAA   1      0     0.3   0.003  0.957  
+CLOCK3111CRY2CCAG   1     22    22.0   0.226  0.635  
+CLOCK3111CRY2TCGG   1    100    99.7   1.023  0.313  
+CLOCK3111CRY2TCAA   1    126   126.0   1.293  0.257  
+CLOCK3111CRY2TCAG   1     72    72.3   0.742  0.390  
+Residuals         177  17247    97.4                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Anova of MEQ and female from file  
+                   Df Sum Sq Mean Sq F value Pr(>F)  
+CLOCK3111VNTRTTBB   1    271  270.92   2.737 0.0998 .
+CLOCK3111VNTRTTAB   1     46   46.16   0.466 0.4956  
+CLOCK3111VNTRCCAA   1      9    9.50   0.096 0.7571  
+CLOCK3111VNTRCCAB   1    277  276.91   2.798 0.0962 .
+CLOCK3111VNTRTCAA   1     58   58.43   0.590 0.4433  
+CLOCK3111VNTRTCBB   1     25   25.49   0.258 0.6124  
+CLOCK3111VNTRTCAB   1      0    0.02   0.000 0.9879  
+Residuals         178  17619   98.98                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Anova of MEQ and female from file  
+              Df Sum Sq Mean Sq F value Pr(>F)  
+CRY1CRY2CCGG   1    394   394.3   3.949 0.0484 *
+CRY1CRY2CCAA   1     25    24.7   0.248 0.6193  
+CRY1CRY2CCAG   1     36    36.4   0.365 0.5465  
+CRY1CRY2GGGG   1     10    10.2   0.102 0.7501  
+CRY1CRY2GGAA   1    112   112.2   1.124 0.2906  
+CRY1CRY2GGAG   1     43    42.6   0.427 0.5145  
+CRY1CRY2CGGG   1     13    13.1   0.131 0.7178  
+CRY1CRY2CGAA   1      0     0.1   0.001 0.9755  
+Residuals    177  17672    99.8                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Anova of MEQ and female from file  
+              Df Sum Sq Mean Sq F value Pr(>F)  
+CRY1VNTRCCAA   1     15    15.2   0.157 0.6927  
+CRY1VNTRCCBB   1    484   484.5   4.999 0.0266 *
+CRY1VNTRCCAB   1     63    63.3   0.653 0.4202  
+CRY1VNTRGGAA   1    316   315.7   3.257 0.0728 .
+CRY1VNTRGGBB   1      5     4.6   0.048 0.8269  
+CRY1VNTRGGAB   1      0     0.0   0.000 0.9828  
+CRY1VNTRCGBB   1    251   251.3   2.593 0.1091  
+CRY1VNTRCGAB   1     16    16.3   0.169 0.6818  
+Residuals    177  17155    96.9                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Anova of MEQ and female from file  
+              Df Sum Sq Mean Sq F value Pr(>F)  
+CRY2VNTRGGAA   1      5    4.83   0.048 0.8261  
+CRY2VNTRGGBB   1     55   55.28   0.554 0.4576  
+CRY2VNTRGGAB   1     12   12.39   0.124 0.7250  
+CRY2VNTRAAAA   1      0    0.02   0.000 0.9878  
+CRY2VNTRAABB   1    258  258.28   2.589 0.1094  
+CRY2VNTRAAAB   1      1    0.55   0.005 0.9410  
+CRY2VNTRAGBB   1    292  291.87   2.926 0.0889 .
+CRY2VNTRAGAB   1     25   24.95   0.250 0.6176  
+Residuals    177  17658   99.76                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Anova of MEQ and female from file  
+             Df Sum Sq Mean Sq F value Pr(>F)  
+CLOCK3111CC   1    274  274.12   2.782  0.097 .
+CLOCK3111TC   1      1    1.44   0.015  0.904  
+Residuals   183  18030   98.53                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Anova of MEQ and female from file  
+             Df Sum Sq Mean Sq F value Pr(>F)
+CRY1CC        1    223  222.77   2.266  0.134
+CRY1GG        1     93   93.03   0.946  0.332
+Residuals   183  17990   98.31               
+Anova of MEQ and female from file  
+             Df Sum Sq Mean Sq F value Pr(>F)
+CRY2GG        1      3    2.61   0.026  0.872
+CRY2AA        1     14   14.47   0.145  0.704
+Residuals   183  18289   99.94               
+Anova of MEQ and female from file  
+             Df Sum Sq Mean Sq F value Pr(>F)
+VNTRBB        1    242  241.97   2.452  0.119
+VNTRAB        1      8    7.65   0.078  0.781
+Residuals   183  18056   98.67               
+Anova of MEQ and female from file  
+               Df Sum Sq Mean Sq F value Pr(>F)  
+PER2PER3AAACC   1     60    59.7   0.613 0.4348  
+PER2PER3AAACG   1      0     0.0   0.000 0.9924  
+PER2PER3AGGCC   1    415   414.9   4.256 0.0406 *
+PER2PER3AGGCG   1      0     0.3   0.003 0.9555  
+PER2PER3AAGGG   1    253   252.7   2.592 0.1091  
+PER2PER3AAGCG   1    128   127.6   1.309 0.2541  
+Residuals     179  17451    97.5                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Anova of MEQ and female from file  
+               Df Sum Sq Mean Sq F value Pr(>F)  
+PER2PER3BAAGG   1     26    25.5   0.264 0.6078  
+PER2PER3BAAAG   1     45    44.9   0.465 0.4960  
+PER2PER3BGGGG   1    319   318.6   3.302 0.0709 .
+PER2PER3BGGAA   1    341   340.5   3.529 0.0619 .
+PER2PER3BGGAG   1    118   118.2   1.224 0.2700  
+PER2PER3BAGAA   1     20    20.4   0.211 0.6464  
+PER2PER3BAGAG   1    260   259.8   2.692 0.1026  
+Residuals     178  17178    96.5                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Anova of MEQ and female from file  
+             Df Sum Sq Mean Sq F value Pr(>F)
+SOCIO         1     66   66.15   0.667  0.415
+Residuals   184  18240   99.13               
+Anova of MEQ and female from file  
+             Df Sum Sq Mean Sq F value   Pr(>F)    
+AGE           1   2103  2103.3   23.89 2.22e-06 ***
+Residuals   184  16203    88.1                     
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Anova of MEQ and female from file  
+              Df Sum Sq Mean Sq F value Pr(>F)
+CRY2VNTRAGAB   1     98   98.01    0.99  0.321
+Residuals    184  18208   98.96               

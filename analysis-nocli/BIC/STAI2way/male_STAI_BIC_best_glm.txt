@@ -1,0 +1,16 @@
+BIC with STAI and male
+Fitting algorithm:  BIC-leaps
+Best Model:
+           df deviance
+Null Model 71 3640.408
+Full Model 84 7031.176
+
+	likelihood-ratio test - GLM
+
+data:  H0: Null Model vs. H1: Best Fit BIC-leaps
+X = 3390.8, df = 13, p-value < 2.2e-16
+
+      (Intercept)           PER3BAA     PER2PER3AAACG     PER2PER3AGGCG     PER2PER3BAAAG      PER2CRY1AACC      PER2CRY1AGGG 
+        44.553936          6.946064        -15.964634         -4.818311         16.909492        -24.265625         -9.161821 
+    PER3BCRY2GGAA CLOCK3111CRY1CCGG CLOCK3111CRY2TTGG CLOCK3111CRY2TCAG CLOCK3111VNTRCCAB      CRY1CRY2CCAA      CRY1VNTRCGAB 
+        -2.589302          4.853924          5.711689          2.662919         -7.492078        -12.861959         -5.175117 

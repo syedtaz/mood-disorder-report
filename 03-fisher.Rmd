@@ -1,0 +1,127 @@
+# Fisher Exact Values
+
+```{r, results='hide', include = FALSE}
+fisherexact <- function(gender, disease) {
+  library(descr)
+  f_path <- paste(disease,'/combined/',gender,'/combined.csv',sep='')
+  data <- read.csv(file =f_path)
+  
+  #glimpse(data)
+  df = tibble(P_Value=numeric())
+  #glimpse(df)
+  for (i in 1:(dim(data)[2]-1)){
+    c <- crosstab(data[,dim(data)[2]], data[,i], fisher=TRUE)
+    df <- df %>% add_row(P_Value=c$fisher.ts$p.value)
+  }
+
+  adjusted <- p.adjust(as.numeric(unlist(df %>% select(P_Value))), method="BH")
+  df <- df %>% add_column(Adjusted_P = adjusted)
+  
+  names = colnames(data)[1:(dim(data)[2]-1)]
+  df <- df %>% add_column(Name = names)
+
+  df <- df %>% arrange(P_Value)
+  df
+}
+```
+
+```{r, include = FALSE}
+create_table <- function(dataframe, label) {
+  kableExtra::kable_styling(knitr::kable(dataframe %>% filter(P_Value <=0.05), booktabs = TRUE, 
+      caption = label), font_size = 10)
+}
+```
+
+## Without AGE & SOCIOSTATUS
+
+### BDI
+
+
+```{r, results='hide', include = FALSE}
+setwd("/Users/tazmilur/Research/mood-disorder-prediction/statistical-analysis/analysis-nocli/")
+BDI1way_gendered <- fisherexact('gendered','BDI1way')
+BDI1way_male <- fisherexact('male','BDI1way')
+BDI1way_female <- fisherexact('female','BDI1way')
+```
+
+#### One-Way
+
+```{r, echo=FALSE}
+create_table(BDI1way_gendered, label='Combined Gender')
+```
+
+```{r, echo=FALSE}
+create_table(BDI1way_male, label='Males only.')
+```
+
+```{r, echo=FALSE}
+create_table(BDI1way_female, label='Females only.')
+```
+
+#### Two-Way
+
+```{r, results='hide', include = FALSE}
+setwd("/Users/tazmilur/Research/mood-disorder-prediction/statistical-analysis/analysis-nocli/")
+BDI2way_gendered <- fisherexact('gendered','BDI2way')
+BDI2way_male <- fisherexact('male','BDI2way')
+BDI2way_female <- fisherexact('female','BDI2way')
+```
+
+
+```{r, echo=FALSE}
+create_table(BDI2way_gendered, label='Combined Genders')
+```
+
+```{r, echo=FALSE}
+create_table(BDI2way_male, label='Males only.')
+```
+
+```{r, echo=FALSE}
+create_table(BDI2way_female, label='Females only.')
+```
+
+### STAI
+
+#### One-Way
+
+```{r, results='hide', include = FALSE}
+setwd("/Users/tazmilur/Research/mood-disorder-prediction/statistical-analysis/analysis-nocli/")
+STAI1way_gendered <- fisherexact('gendered','STAI1way')
+STAI1way_male <- fisherexact('male','STAI1way')
+STAI1way_female <- fisherexact('female','STAI1way')
+```
+
+```{r, echo=FALSE}
+create_table(STAI1way_gendered,label='Combined Genders')
+```
+
+
+```{r, echo=FALSE}
+create_table(STAI1way_male,label='Males Only.')
+```
+
+```{r, echo=FALSE}
+create_table(STAI1way_female,label='Females Only.')
+```
+
+#### Two-Way
+
+```{r, results='hide', include = FALSE}
+setwd("/Users/tazmilur/Research/mood-disorder-prediction/statistical-analysis/analysis-nocli/")
+STAI2way_gendered <- fisherexact('gendered','STAI2way')
+STAI2way_male <- fisherexact('male','STAI2way')
+STAI2way_female <- fisherexact('female','STAI2way')
+```
+
+
+```{r, echo=FALSE}
+create_table(STAI2way_gendered,label='Combined Genders')
+```
+
+```{r, echo=FALSE}
+create_table(STAI2way_male,label='Males Only')
+```
+
+```{r, echo=FALSE}
+create_table(STAI2way_female,label='Females Only.')
+```

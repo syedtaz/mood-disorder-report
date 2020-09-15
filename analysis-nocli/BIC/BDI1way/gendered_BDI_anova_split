@@ -1,0 +1,62 @@
+Anova of BDI and gendered from file  
+             Df Sum Sq Mean Sq F value Pr(>F)  
+PER2AA        1      2    2.20   0.038 0.8459  
+PER2GG        1    170  170.40   2.925 0.0883 .
+Residuals   284  16547   58.26                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Anova of BDI and gendered from file  
+             Df Sum Sq Mean Sq F value Pr(>F)
+PER3AGG       1      0    0.45   0.008  0.930
+PER3ACG       1     20   20.26   0.344  0.558
+Residuals   284  16699   58.80               
+Anova of BDI and gendered from file  
+             Df Sum Sq Mean Sq F value Pr(>F)
+PER3BAA       1      1    1.36   0.023  0.879
+PER3BAG       1     34   34.48   0.587  0.444
+Residuals   284  16684   58.75               
+Anova of BDI and gendered from file  
+             Df Sum Sq Mean Sq F value Pr(>F)
+PER3CGG       1     21   21.03   0.358  0.550
+PER3CGT       1     10   10.23   0.174  0.677
+Residuals   284  16688   58.76               
+Anova of BDI and gendered from file  
+             Df Sum Sq Mean Sq F value Pr(>F)
+CLOCK3111CC   1      4    3.77   0.064  0.800
+CLOCK3111TC   1     31   31.02   0.528  0.468
+Residuals   284  16685   58.75               
+Anova of BDI and gendered from file  
+             Df Sum Sq Mean Sq F value Pr(>F)
+CRY1CC        1      2    1.91   0.033  0.857
+CRY1GG        1     95   94.79   1.619  0.204
+Residuals   284  16623   58.53               
+Anova of BDI and gendered from file  
+             Df Sum Sq Mean Sq F value  Pr(>F)   
+CRY2GG        1    181   181.4   3.188 0.07523 . 
+CRY2AA        1    384   383.8   6.747 0.00988 **
+Residuals   284  16154    56.9                   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Anova of BDI and gendered from file  
+             Df Sum Sq Mean Sq F value Pr(>F)
+VNTRBB        1      4    4.50   0.076  0.782
+VNTRAB        1      8    7.99   0.136  0.713
+Residuals   284  16707   58.83               
+Anova of BDI and gendered from file  
+             Df Sum Sq Mean Sq F value Pr(>F)  
+SOCIO         1    273  272.72   4.726 0.0305 *
+Residuals   285  16447   57.71                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Anova of BDI and gendered from file  
+             Df Sum Sq Mean Sq F value Pr(>F)  
+AGE           1    229  229.24   3.962 0.0475 *
+Residuals   285  16490   57.86                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Anova of BDI and gendered from file  
+             Df Sum Sq Mean Sq F value  Pr(>F)   
+GENDER        1    520   519.6   9.142 0.00273 **
+Residuals   285  16200    56.8                   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

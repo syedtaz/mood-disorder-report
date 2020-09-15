@@ -1,0 +1,138 @@
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(bestglm)
+library(tidyverse)
+```
+
+# Bayesian Information Criterion
+
+```{r, results='hide', include = FALSE}
+bicglm <- function(gender, disease) {
+
+  options(scipen=999)
+  f_path <- paste(disease,'/combined/',gender,'/combined.csv',sep='')
+  data <- read.csv(file =f_path)
+  
+  fit <- bestglm(data, family=gaussian, IC='BIC', method='forward',nvmax=10)
+  res<-lm(y ~ ., data=fit$BestModel$model)
+  
+  df <- data.frame(coef(res))
+  df <- cbind(df, confint(res))
+  df <- cbind(df, summary(res)$coefficients[,4])
+  if (length(summary(res)$fstatistic[1])==1) {
+  df$pregression <- pf(summary(res)$fstatistic[1], df1= (summary(res)$fstatistic)[2], df2=(summary(res)$fstatistic)[3], lower.tail = FALSE)
+  }
+  df$r_squared <- summary(res)$r.squared
+  df$adj_r_squared <- summary(res)$adj.r.squared
+
+  df
+}
+```
+
+```{r, include = FALSE}
+create_table <- function(dataframe, label) {
+  if (missing(label)) {
+    label = ''
+  }
+  kableExtra::kable_styling(knitr::kable(dataframe, booktabs = TRUE, 
+      caption = label), font_size = 10)
+}
+```
+
+
+## Without AGE & SOCIOSTATUS
+
+### BDI
+
+```{r, results='hide', include = FALSE}
+setwd("/Users/tazmilur/Research/mood-disorder-prediction/statistical-analysis/analysis-nocli/")
+BDI1way_gendered <- bicglm('gendered','BDI1way')
+BDI1way_male <- bicglm('male','BDI1way')
+BDI1way_female <- bicglm('female','BDI1way')
+```
+
+#### One-Way
+
+```{r, echo=FALSE}
+create_table(BDI1way_gendered, label='Combined Gender')
+```
+
+```{r, echo=FALSE}
+create_table(BDI1way_male, label='Males only.')
+```
+
+```{r, echo=FALSE}
+create_table(BDI1way_female, label='Females only.')
+```
+
+#### Two-Way
+
+```{r, results='hide', include = FALSE}
+setwd("/Users/tazmilur/Research/mood-disorder-prediction/statistical-analysis/analysis-nocli/")
+BDI2way_gendered <- bicglm('gendered','BDI2way')
+BDI2way_male <- bicglm('male','BDI2way')
+BDI2way_female <- bicglm('female','BDI2way')
+```
+
+
+```{r, echo=FALSE}
+create_table(BDI2way_gendered, label='Combined Genders')
+```
+
+```{r, echo=FALSE}
+create_table(BDI2way_male, label='Males only.')
+```
+
+```{r, echo=FALSE}
+create_table(BDI2way_female, label='Females only.')
+```
+
+### STAI
+
+#### One-Way
+
+```{r, results='hide', include = FALSE}
+setwd("/Users/tazmilur/Research/mood-disorder-prediction/statistical-analysis/analysis-nocli/")
+STAI1way_gendered <- bicglm('gendered','STAI1way')
+STAI1way_male <- bicglm('male','STAI1way')
+STAI1way_female <- bicglm('female','STAI1way')
+```
+
+```{r, echo=FALSE}
+create_table(STAI1way_gendered,label='Combined Genders')
+```
+
+
+```{r, echo=FALSE}
+create_table(STAI1way_male,label='Males Only.')
+```
+
+
+```{r, echo=FALSE}
+create_table(STAI1way_female,label='Females Only.')
+```
+
+#### Two-Way
+
+```{r, results='hide', include = FALSE}
+setwd("/Users/tazmilur/Research/mood-disorder-prediction/statistical-analysis/analysis-nocli/")
+STAI2way_gendered <- bicglm('gendered','STAI2way')
+STAI2way_male <- bicglm('male','STAI2way')
+STAI2way_female <- bicglm('female','STAI2way')
+```
+
+
+```{r, echo=FALSE}
+create_table(STAI2way_gendered,label='Combined Genders')
+```
+
+```{r, echo=FALSE}
+create_table(STAI2way_male,label='Males Only')
+```
+
+```{r, echo=FALSE}
+create_table(STAI2way_female,label='Females Only.')
+```
+
+
