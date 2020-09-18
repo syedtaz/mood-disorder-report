@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Section 6 ANOVA | Mood Disorder Project Report</title>
+  <title>Section 7 Kruskal-Wallis | Mood Disorder Project Report</title>
   <meta name="description" content="Summary from statistical analysis conducted on the results of the mood disorder project." />
   <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Section 6 ANOVA | Mood Disorder Project Report" />
+  <meta property="og:title" content="Section 7 Kruskal-Wallis | Mood Disorder Project Report" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Section 6 ANOVA | Mood Disorder Project Report" />
+  <meta name="twitter:title" content="Section 7 Kruskal-Wallis | Mood Disorder Project Report" />
   
   <meta name="twitter:description" content="Summary from statistical analysis conducted on the results of the mood disorder project." />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="bayesian-information-criterion.html"/>
-<link rel="next" href="kruskal-wallis.html"/>
+<link rel="prev" href="anova.html"/>
+<link rel="next" href="association-analysis.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -208,1367 +208,317 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="anova" class="section level1">
-<h1><span class="header-section-number">Section 6</span> ANOVA</h1>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1">create_table &lt;-<span class="st"> </span><span class="cf">function</span>(dataframe, label) {</a>
-<a class="sourceLine" id="cb2-2" data-line-number="2">  kableExtra<span class="op">::</span><span class="kw">kable_styling</span>(knitr<span class="op">::</span><span class="kw">kable</span>(dataframe, <span class="dt">booktabs =</span> <span class="ot">TRUE</span>, </a>
-<a class="sourceLine" id="cb2-3" data-line-number="3">      <span class="dt">caption =</span> label), <span class="dt">font_size =</span> <span class="dv">10</span>)</a>
-<a class="sourceLine" id="cb2-4" data-line-number="4">}</a></code></pre></div>
+<div id="kruskal-wallis" class="section level1">
+<h1><span class="header-section-number">Section 7</span> Kruskal-Wallis</h1>
 <div id="bdi" class="section level3">
-<h3><span class="header-section-number">6.0.1</span> BDI</h3>
+<h3><span class="header-section-number">7.0.1</span> BDI</h3>
 <table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
 <caption style="font-size: initial !important;">
-<span id="tab:unnamed-chunk-156">Table 6.1: </span>Gender and PER2
+<span id="tab:unnamed-chunk-174">Table 7.1: </span>BDI by PER2
 </caption>
 <thead>
 <tr>
 <th style="text-align:left;">
 </th>
-<th style="text-align:right;">
-Sum.Sq
+<th style="text-align:left;">
+kruskal.data.name
 </th>
 <th style="text-align:right;">
-Df
+kruskal.statistic
 </th>
 <th style="text-align:right;">
-F.value
-</th>
-<th style="text-align:right;">
-Pr..F.
+kruskal.p.value
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align:left;">
-(Intercept)
+Kruskal-Wallis chi-squared
 </td>
-<td style="text-align:right;">
-19003.5841
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-346.1740830
-</td>
-<td style="text-align:right;">
-0.0000000
-</td>
-</tr>
-<tr>
 <td style="text-align:left;">
-gender
+BDI by per2
 </td>
 <td style="text-align:right;">
-497.4149
+7.429713
 </td>
 <td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-9.0610350
-</td>
-<td style="text-align:right;">
-0.0028807
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-per2
-</td>
-<td style="text-align:right;">
-450.0302
-</td>
-<td style="text-align:right;">
-2
-</td>
-<td style="text-align:right;">
-4.0989320
-</td>
-<td style="text-align:right;">
-0.0177274
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-gender:per2
-</td>
-<td style="text-align:right;">
-78.8539
-</td>
-<td style="text-align:right;">
-2
-</td>
-<td style="text-align:right;">
-0.7182113
-</td>
-<td style="text-align:right;">
-0.4886351
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Residuals
-</td>
-<td style="text-align:right;">
-13614.2163
-</td>
-<td style="text-align:right;">
-248
-</td>
-<td style="text-align:right;">
-NA
-</td>
-<td style="text-align:right;">
-NA
+0.0243589
 </td>
 </tr>
 </tbody>
 </table>
 <table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
 <caption style="font-size: initial !important;">
-<span id="tab:unnamed-chunk-157">Table 6.2: </span>Gender
+<span id="tab:unnamed-chunk-175">Table 7.2: </span>PER2 Dunn Test
 </caption>
 <thead>
 <tr>
 <th style="text-align:left;">
+Comparison
 </th>
 <th style="text-align:right;">
-Sum.Sq
+Z
 </th>
 <th style="text-align:right;">
-Df
+P.unadj
 </th>
 <th style="text-align:right;">
-F.value
-</th>
-<th style="text-align:right;">
-Pr..F.
+P.adj
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align:left;">
-(Intercept)
+AA - AG
 </td>
 <td style="text-align:right;">
-25051.2066
+1.1058114
 </td>
 <td style="text-align:right;">
-1
+0.2688082
 </td>
 <td style="text-align:right;">
-448.711157
-</td>
-<td style="text-align:right;">
-0.0000000
+0.4032123
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-gender
+AA - GG
 </td>
 <td style="text-align:right;">
-555.5215
+-0.9314891
 </td>
 <td style="text-align:right;">
-1
+0.3516006
 </td>
 <td style="text-align:right;">
-9.950368
-</td>
-<td style="text-align:right;">
-0.0018033
+0.3516006
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Residuals
+AG - GG
 </td>
 <td style="text-align:right;">
-14068.9706
+-2.7193194
 </td>
 <td style="text-align:right;">
-252
+0.0065416
 </td>
 <td style="text-align:right;">
-NA
-</td>
-<td style="text-align:right;">
-NA
+0.0196249
 </td>
 </tr>
 </tbody>
 </table>
 <table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
 <caption style="font-size: initial !important;">
-<span id="tab:unnamed-chunk-158">Table 6.3: </span>PER2
+<span id="tab:unnamed-chunk-177">Table 7.3: </span>BDI by CRY2
 </caption>
 <thead>
 <tr>
 <th style="text-align:left;">
 </th>
-<th style="text-align:right;">
-Sum.Sq
+<th style="text-align:left;">
+kruskal.data.name
 </th>
 <th style="text-align:right;">
-Df
+kruskal.statistic
 </th>
 <th style="text-align:right;">
-F.value
-</th>
-<th style="text-align:right;">
-Pr..F.
+kruskal.p.value
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align:left;">
-(Intercept)
+Kruskal-Wallis chi-squared
 </td>
-<td style="text-align:right;">
-27618.451
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-484.886461
-</td>
-<td style="text-align:right;">
-0.0000000
-</td>
-</tr>
-<tr>
 <td style="text-align:left;">
-per2
+BDI by cry2
 </td>
 <td style="text-align:right;">
-327.885
+8.160619
 </td>
 <td style="text-align:right;">
-2
-</td>
-<td style="text-align:right;">
-2.878275
-</td>
-<td style="text-align:right;">
-0.0580898
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Residuals
-</td>
-<td style="text-align:right;">
-14296.607
-</td>
-<td style="text-align:right;">
-251
-</td>
-<td style="text-align:right;">
-NA
-</td>
-<td style="text-align:right;">
-NA
+0.0169022
 </td>
 </tr>
 </tbody>
 </table>
 <table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
 <caption style="font-size: initial !important;">
-<span id="tab:unnamed-chunk-159">Table 6.4: </span>Age and PER2
+<span id="tab:unnamed-chunk-178">Table 7.4: </span>CRY2 Dunn Test
 </caption>
 <thead>
 <tr>
 <th style="text-align:left;">
+Comparison
 </th>
 <th style="text-align:right;">
-Sum.Sq
+Z
 </th>
 <th style="text-align:right;">
-Df
+P.unadj
 </th>
 <th style="text-align:right;">
-F.value
-</th>
-<th style="text-align:right;">
-Pr..F.
+P.adj
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align:left;">
-(Intercept)
+AA - AG
 </td>
 <td style="text-align:right;">
-4328.19786
+-2.0083959
 </td>
 <td style="text-align:right;">
-1
+0.0446012
 </td>
 <td style="text-align:right;">
-78.012078
-</td>
-<td style="text-align:right;">
-0.0000000
+0.0669019
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-age
+AA - GG
 </td>
 <td style="text-align:right;">
-58.01147
+0.5664352
 </td>
 <td style="text-align:right;">
-1
+0.5710980
 </td>
 <td style="text-align:right;">
-1.045607
-</td>
-<td style="text-align:right;">
-0.3075173
+0.5710980
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-per2
+AG - GG
 </td>
 <td style="text-align:right;">
-648.16653
+2.6471875
 </td>
 <td style="text-align:right;">
-2
+0.0081164
 </td>
 <td style="text-align:right;">
-5.841325
-</td>
-<td style="text-align:right;">
-0.0033196
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-age:per2
-</td>
-<td style="text-align:right;">
-462.40771
-</td>
-<td style="text-align:right;">
-2
-</td>
-<td style="text-align:right;">
-4.167253
-</td>
-<td style="text-align:right;">
-0.0165933
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Residuals
-</td>
-<td style="text-align:right;">
-13759.31902
-</td>
-<td style="text-align:right;">
-248
-</td>
-<td style="text-align:right;">
-NA
-</td>
-<td style="text-align:right;">
-NA
+0.0243493
 </td>
 </tr>
 </tbody>
 </table>
-<table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
-<caption style="font-size: initial !important;">
-<span id="tab:unnamed-chunk-160">Table 6.5: </span>Age
-</caption>
-<thead>
-<tr>
-<th style="text-align:left;">
-</th>
-<th style="text-align:right;">
-Sum.Sq
-</th>
-<th style="text-align:right;">
-Df
-</th>
-<th style="text-align:right;">
-F.value
-</th>
-<th style="text-align:right;">
-Pr..F.
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-4611.102
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-80.050280
-</td>
-<td style="text-align:right;">
-0.0000000
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-age
-</td>
-<td style="text-align:right;">
-108.645
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-1.886114
-</td>
-<td style="text-align:right;">
-0.1708615
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Residuals
-</td>
-<td style="text-align:right;">
-14515.847
-</td>
-<td style="text-align:right;">
-252
-</td>
-<td style="text-align:right;">
-NA
-</td>
-<td style="text-align:right;">
-NA
-</td>
-</tr>
-</tbody>
-</table>
-<div id="tukey" class="section level4">
-<h4><span class="header-section-number">6.0.1.1</span> Tukey</h4>
-<table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
-<caption style="font-size: initial !important;">
-<span id="tab:unnamed-chunk-161">Table 6.6: </span>PER2 Tukey
-</caption>
-<thead>
-<tr>
-<th style="text-align:left;">
-Row.names
-</th>
-<th style="text-align:right;">
-BDI.x
-</th>
-<th style="text-align:right;">
-std
-</th>
-<th style="text-align:right;">
-r
-</th>
-<th style="text-align:right;">
-Min
-</th>
-<th style="text-align:right;">
-Max
-</th>
-<th style="text-align:right;">
-Q25
-</th>
-<th style="text-align:right;">
-Q50
-</th>
-<th style="text-align:right;">
-Q75
-</th>
-<th style="text-align:right;">
-BDI.y
-</th>
-<th style="text-align:left;">
-groups
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;">
-AA
-</td>
-<td style="text-align:right;">
-11.51220
-</td>
-<td style="text-align:right;">
-7.536982
-</td>
-<td style="text-align:right;">
-41
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-32
-</td>
-<td style="text-align:right;">
-5
-</td>
-<td style="text-align:right;">
-9
-</td>
-<td style="text-align:right;">
-16.00
-</td>
-<td style="text-align:right;">
-11.51220
-</td>
-<td style="text-align:left;">
-ab
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-AG
-</td>
-<td style="text-align:right;">
-10.29915
-</td>
-<td style="text-align:right;">
-7.518099
-</td>
-<td style="text-align:right;">
-117
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-39
-</td>
-<td style="text-align:right;">
-5
-</td>
-<td style="text-align:right;">
-8
-</td>
-<td style="text-align:right;">
-14.00
-</td>
-<td style="text-align:right;">
-10.29915
-</td>
-<td style="text-align:left;">
-b
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-GG
-</td>
-<td style="text-align:right;">
-12.79167
-</td>
-<td style="text-align:right;">
-7.586576
-</td>
-<td style="text-align:right;">
-96
-</td>
-<td style="text-align:right;">
-2
-</td>
-<td style="text-align:right;">
-34
-</td>
-<td style="text-align:right;">
-7
-</td>
-<td style="text-align:right;">
-11
-</td>
-<td style="text-align:right;">
-17.25
-</td>
-<td style="text-align:right;">
-12.79167
-</td>
-<td style="text-align:left;">
-a
-</td>
-</tr>
-</tbody>
-</table>
-</div>
 </div>
 <div id="stai" class="section level3">
-<h3><span class="header-section-number">6.0.2</span> STAI</h3>
+<h3><span class="header-section-number">7.0.2</span> STAI</h3>
 <table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
 <caption style="font-size: initial !important;">
-<span id="tab:unnamed-chunk-163">Table 6.7: </span>Gender and PER2
+<span id="tab:unnamed-chunk-181">Table 7.5: </span>STAI by CRY2
 </caption>
 <thead>
 <tr>
 <th style="text-align:left;">
 </th>
-<th style="text-align:right;">
-Sum.Sq
+<th style="text-align:left;">
+kruskal.data.name
 </th>
 <th style="text-align:right;">
-Df
+kruskal.statistic
 </th>
 <th style="text-align:right;">
-F.value
-</th>
-<th style="text-align:right;">
-Pr..F.
+kruskal.p.value
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align:left;">
-(Intercept)
+Kruskal-Wallis chi-squared
 </td>
-<td style="text-align:right;">
-329101.7419
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-3180.2790021
-</td>
-<td style="text-align:right;">
-0.0000000
-</td>
-</tr>
-<tr>
 <td style="text-align:left;">
-gender
+STAI by cry2
 </td>
 <td style="text-align:right;">
-911.0198
+11.94447
 </td>
 <td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-8.8036518
-</td>
-<td style="text-align:right;">
-0.0032863
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-per2
-</td>
-<td style="text-align:right;">
-477.1272
-</td>
-<td style="text-align:right;">
-2
-</td>
-<td style="text-align:right;">
-2.3053625
-</td>
-<td style="text-align:right;">
-0.1017578
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-gender:per2
-</td>
-<td style="text-align:right;">
-165.6767
-</td>
-<td style="text-align:right;">
-2
-</td>
-<td style="text-align:right;">
-0.8005093
-</td>
-<td style="text-align:right;">
-0.4502039
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Residuals
-</td>
-<td style="text-align:right;">
-26905.3290
-</td>
-<td style="text-align:right;">
-260
-</td>
-<td style="text-align:right;">
-NA
-</td>
-<td style="text-align:right;">
-NA
+0.0025485
 </td>
 </tr>
 </tbody>
 </table>
 <table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
 <caption style="font-size: initial !important;">
-<span id="tab:unnamed-chunk-164">Table 6.8: </span>PER2
+<span id="tab:unnamed-chunk-182">Table 7.6: </span>CRY2 Dunn Test
 </caption>
 <thead>
 <tr>
 <th style="text-align:left;">
+Comparison
 </th>
 <th style="text-align:right;">
-Sum.Sq
+Z
 </th>
 <th style="text-align:right;">
-Df
+P.unadj
 </th>
 <th style="text-align:right;">
-F.value
-</th>
-<th style="text-align:right;">
-Pr..F.
+P.adj
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align:left;">
-(Intercept)
+AA - AG
 </td>
 <td style="text-align:right;">
-426418.4968
+-3.2898748
 </td>
 <td style="text-align:right;">
-1
+0.0010023
 </td>
 <td style="text-align:right;">
-4012.764837
-</td>
-<td style="text-align:right;">
-0.0000000
+0.0030070
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-per2
+AA - GG
 </td>
 <td style="text-align:right;">
-444.1449
+-0.9089516
 </td>
 <td style="text-align:right;">
-2
+0.3633757
 </td>
 <td style="text-align:right;">
-2.089789
-</td>
-<td style="text-align:right;">
-0.1257629
+0.3633757
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Residuals
+AG - GG
 </td>
 <td style="text-align:right;">
-27947.8288
+2.2655663
 </td>
 <td style="text-align:right;">
-263
+0.0234780
 </td>
 <td style="text-align:right;">
-NA
-</td>
-<td style="text-align:right;">
-NA
-</td>
-</tr>
-</tbody>
-</table>
-<table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
-<caption style="font-size: initial !important;">
-<span id="tab:unnamed-chunk-165">Table 6.9: </span>Gender
-</caption>
-<thead>
-<tr>
-<th style="text-align:left;">
-</th>
-<th style="text-align:right;">
-Sum.Sq
-</th>
-<th style="text-align:right;">
-Df
-</th>
-<th style="text-align:right;">
-F.value
-</th>
-<th style="text-align:right;">
-Pr..F.
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-426418.4968
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-4012.764837
-</td>
-<td style="text-align:right;">
-0.0000000
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-per2
-</td>
-<td style="text-align:right;">
-444.1449
-</td>
-<td style="text-align:right;">
-2
-</td>
-<td style="text-align:right;">
-2.089789
-</td>
-<td style="text-align:right;">
-0.1257629
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Residuals
-</td>
-<td style="text-align:right;">
-27947.8288
-</td>
-<td style="text-align:right;">
-263
-</td>
-<td style="text-align:right;">
-NA
-</td>
-<td style="text-align:right;">
-NA
-</td>
-</tr>
-</tbody>
-</table>
-<table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
-<caption style="font-size: initial !important;">
-<span id="tab:unnamed-chunk-166">Table 6.10: </span>Gender and CRY2
-</caption>
-<thead>
-<tr>
-<th style="text-align:left;">
-</th>
-<th style="text-align:right;">
-Sum.Sq
-</th>
-<th style="text-align:right;">
-Df
-</th>
-<th style="text-align:right;">
-F.value
-</th>
-<th style="text-align:right;">
-Pr..F.
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-398831.9932
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-4057.994228
-</td>
-<td style="text-align:right;">
-0.0000000
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-gender
-</td>
-<td style="text-align:right;">
-693.8477
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-7.059689
-</td>
-<td style="text-align:right;">
-0.0083717
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-cry2
-</td>
-<td style="text-align:right;">
-919.4176
-</td>
-<td style="text-align:right;">
-2
-</td>
-<td style="text-align:right;">
-4.677397
-</td>
-<td style="text-align:right;">
-0.0101000
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-gender:cry2
-</td>
-<td style="text-align:right;">
-1067.6003
-</td>
-<td style="text-align:right;">
-2
-</td>
-<td style="text-align:right;">
-5.431254
-</td>
-<td style="text-align:right;">
-0.0048885
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Residuals
-</td>
-<td style="text-align:right;">
-25553.5894
-</td>
-<td style="text-align:right;">
-260
-</td>
-<td style="text-align:right;">
-NA
-</td>
-<td style="text-align:right;">
-NA
-</td>
-</tr>
-</tbody>
-</table>
-<table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
-<caption style="font-size: initial !important;">
-<span id="tab:unnamed-chunk-167">Table 6.11: </span>CRY2
-</caption>
-<thead>
-<tr>
-<th style="text-align:left;">
-</th>
-<th style="text-align:right;">
-Sum.Sq
-</th>
-<th style="text-align:right;">
-Df
-</th>
-<th style="text-align:right;">
-F.value
-</th>
-<th style="text-align:right;">
-Pr..F.
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-488658.358
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-4708.607621
-</td>
-<td style="text-align:right;">
-0.000000
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-cry2
-</td>
-<td style="text-align:right;">
-1097.886
-</td>
-<td style="text-align:right;">
-2
-</td>
-<td style="text-align:right;">
-5.289499
-</td>
-<td style="text-align:right;">
-0.005595
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Residuals
-</td>
-<td style="text-align:right;">
-27294.087
-</td>
-<td style="text-align:right;">
-263
-</td>
-<td style="text-align:right;">
-NA
-</td>
-<td style="text-align:right;">
-NA
-</td>
-</tr>
-</tbody>
-</table>
-<div id="tukey-1" class="section level4">
-<h4><span class="header-section-number">6.0.2.1</span> Tukey</h4>
-<table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
-<caption style="font-size: initial !important;">
-<span id="tab:unnamed-chunk-168">Table 6.12: </span>CRY2 Tukey
-</caption>
-<thead>
-<tr>
-<th style="text-align:left;">
-Row.names
-</th>
-<th style="text-align:right;">
-STAI.x
-</th>
-<th style="text-align:right;">
-std
-</th>
-<th style="text-align:right;">
-r
-</th>
-<th style="text-align:right;">
-Min
-</th>
-<th style="text-align:right;">
-Max
-</th>
-<th style="text-align:right;">
-Q25
-</th>
-<th style="text-align:right;">
-Q50
-</th>
-<th style="text-align:right;">
-Q75
-</th>
-<th style="text-align:right;">
-STAI.y
-</th>
-<th style="text-align:left;">
-groups
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;">
-AA
-</td>
-<td style="text-align:right;">
-41.94737
-</td>
-<td style="text-align:right;">
-10.312316
-</td>
-<td style="text-align:right;">
-76
-</td>
-<td style="text-align:right;">
-25
-</td>
-<td style="text-align:right;">
-69
-</td>
-<td style="text-align:right;">
-35
-</td>
-<td style="text-align:right;">
-41
-</td>
-<td style="text-align:right;">
-47
-</td>
-<td style="text-align:right;">
-41.94737
-</td>
-<td style="text-align:left;">
-b
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-AG
-</td>
-<td style="text-align:right;">
-46.45690
-</td>
-<td style="text-align:right;">
-10.758529
-</td>
-<td style="text-align:right;">
-116
-</td>
-<td style="text-align:right;">
-24
-</td>
-<td style="text-align:right;">
-77
-</td>
-<td style="text-align:right;">
-38
-</td>
-<td style="text-align:right;">
-48
-</td>
-<td style="text-align:right;">
-54
-</td>
-<td style="text-align:right;">
-46.45690
-</td>
-<td style="text-align:left;">
-a
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-GG
-</td>
-<td style="text-align:right;">
-42.91892
-</td>
-<td style="text-align:right;">
-9.071643
-</td>
-<td style="text-align:right;">
-74
-</td>
-<td style="text-align:right;">
-26
-</td>
-<td style="text-align:right;">
-64
-</td>
-<td style="text-align:right;">
-35
-</td>
-<td style="text-align:right;">
-43
-</td>
-<td style="text-align:right;">
-49
-</td>
-<td style="text-align:right;">
-42.91892
-</td>
-<td style="text-align:left;">
-b
-</td>
-</tr>
-</tbody>
-</table>
-<table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
-<caption style="font-size: initial !important;">
-<span id="tab:unnamed-chunk-169">Table 6.13: </span>PER2 Tukey
-</caption>
-<thead>
-<tr>
-<th style="text-align:left;">
-Row.names
-</th>
-<th style="text-align:right;">
-STAI.x
-</th>
-<th style="text-align:right;">
-std
-</th>
-<th style="text-align:right;">
-r
-</th>
-<th style="text-align:right;">
-Min
-</th>
-<th style="text-align:right;">
-Max
-</th>
-<th style="text-align:right;">
-Q25
-</th>
-<th style="text-align:right;">
-Q50
-</th>
-<th style="text-align:right;">
-Q75
-</th>
-<th style="text-align:right;">
-STAI.y
-</th>
-<th style="text-align:left;">
-groups
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;">
-AA
-</td>
-<td style="text-align:right;">
-45.59524
-</td>
-<td style="text-align:right;">
-11.472256
-</td>
-<td style="text-align:right;">
-42
-</td>
-<td style="text-align:right;">
-26
-</td>
-<td style="text-align:right;">
-77
-</td>
-<td style="text-align:right;">
-37.25
-</td>
-<td style="text-align:right;">
-45.5
-</td>
-<td style="text-align:right;">
-52.75
-</td>
-<td style="text-align:right;">
-45.59524
-</td>
-<td style="text-align:left;">
-a
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-AG
-</td>
-<td style="text-align:right;">
-42.82540
-</td>
-<td style="text-align:right;">
-9.876906
-</td>
-<td style="text-align:right;">
-126
-</td>
-<td style="text-align:right;">
-25
-</td>
-<td style="text-align:right;">
-68
-</td>
-<td style="text-align:right;">
-35.00
-</td>
-<td style="text-align:right;">
-42.0
-</td>
-<td style="text-align:right;">
-50.00
-</td>
-<td style="text-align:right;">
-42.82540
-</td>
-<td style="text-align:left;">
-a
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-GG
-</td>
-<td style="text-align:right;">
-45.32653
-</td>
-<td style="text-align:right;">
-10.333386
-</td>
-<td style="text-align:right;">
-98
-</td>
-<td style="text-align:right;">
-24
-</td>
-<td style="text-align:right;">
-70
-</td>
-<td style="text-align:right;">
-36.00
-</td>
-<td style="text-align:right;">
-46.0
-</td>
-<td style="text-align:right;">
-52.00
-</td>
-<td style="text-align:right;">
-45.32653
-</td>
-<td style="text-align:left;">
-a
+0.0352169
 </td>
 </tr>
 </tbody>
 </table>
 
-</div>
 </div>
 </div>
             </section>
@@ -1576,8 +526,8 @@ a
           </div>
         </div>
       </div>
-<a href="bayesian-information-criterion.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="kruskal-wallis.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="anova.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="association-analysis.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
