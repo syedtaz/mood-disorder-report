@@ -1,7 +1,0 @@
-BIC with BDI and female .txt
-BIC
-BICq equivalent for q in (0.0993048964890688, 0.761966491433981)
-Best Model:
-              Estimate Std. Error   t value     Pr(>|t|)
-(Intercept)  0.8449723  0.1535495  5.502931 1.113073e-07
-SOCIO       -8.1247728  2.5855104 -3.142425 1.924944e-03

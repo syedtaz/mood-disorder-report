@@ -1,5 +1,0 @@
-BIC with BDI and male
-Fitting algorithm:  BIC-leaps
-Best model is null model!
-(Intercept) 
-  0.1604938 
