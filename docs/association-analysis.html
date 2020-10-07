@@ -161,8 +161,210 @@
 <caption style="font-size: initial !important;">
 <span id="tab:unnamed-chunk-5">Table 8.1: </span>Association Rules for BDI=0
 </caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:left;">
+lhs
+</th>
+<th style="text-align:left;">
+Var.2
+</th>
+<th style="text-align:left;">
+rhs
+</th>
+<th style="text-align:right;">
+support
+</th>
+<th style="text-align:right;">
+confidence
+</th>
+<th style="text-align:right;">
+coverage
+</th>
+<th style="text-align:right;">
+lift
+</th>
+<th style="text-align:right;">
+count
+</th>
+</tr>
+</thead>
 <tbody>
 <tr>
+<td style="text-align:left;">
+[1]
+</td>
+<td style="text-align:left;">
+{GENDER=1,PER3B=GG,PER3C=GG}
+</td>
+<td style="text-align:left;">
+=&gt;
+</td>
+<td style="text-align:left;">
+{BDI=0}
+</td>
+<td style="text-align:right;">
+0.0590551
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+0.0590551
+</td>
+<td style="text-align:right;">
+1.468208
+</td>
+<td style="text-align:right;">
+15
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[2]
+</td>
+<td style="text-align:left;">
+{GENDER=1,MEQ=-1,PER2=AG}
+</td>
+<td style="text-align:left;">
+=&gt;
+</td>
+<td style="text-align:left;">
+{BDI=0}
+</td>
+<td style="text-align:right;">
+0.0511811
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+0.0511811
+</td>
+<td style="text-align:right;">
+1.468208
+</td>
+<td style="text-align:right;">
+13
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[3]
+</td>
+<td style="text-align:left;">
+{MEQ=-1,PER2=AG,CRY1=CG}
+</td>
+<td style="text-align:left;">
+=&gt;
+</td>
+<td style="text-align:left;">
+{BDI=0}
+</td>
+<td style="text-align:right;">
+0.0511811
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+0.0511811
+</td>
+<td style="text-align:right;">
+1.468208
+</td>
+<td style="text-align:right;">
+13
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[4]
+</td>
+<td style="text-align:left;">
+{GENDER=1,PER3C=TT,CRY2=GG}
+</td>
+<td style="text-align:left;">
+=&gt;
+</td>
+<td style="text-align:left;">
+{BDI=0}
+</td>
+<td style="text-align:right;">
+0.0551181
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+0.0551181
+</td>
+<td style="text-align:right;">
+1.468208
+</td>
+<td style="text-align:right;">
+14
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[5]
+</td>
+<td style="text-align:left;">
+{MEQ=0,CRY1=GG,CRY2=GG}
+</td>
+<td style="text-align:left;">
+=&gt;
+</td>
+<td style="text-align:left;">
+{BDI=0}
+</td>
+<td style="text-align:right;">
+0.0511811
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+0.0511811
+</td>
+<td style="text-align:right;">
+1.468208
+</td>
+<td style="text-align:right;">
+13
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[6]
+</td>
+<td style="text-align:left;">
+{VNTR=AA,CLOCK3111=TC,SOCIOSTATUS.1=4}
+</td>
+<td style="text-align:left;">
+=&gt;
+</td>
+<td style="text-align:left;">
+{BDI=0}
+</td>
+<td style="text-align:right;">
+0.0551181
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+0.0551181
+</td>
+<td style="text-align:right;">
+1.468208
+</td>
+<td style="text-align:right;">
+14
+</td>
 </tr>
 </tbody>
 </table>
@@ -420,36 +622,7 @@ count
 [1]
 </td>
 <td style="text-align:left;">
-{GENDER=1,VNTR=AB,CLOCK3111=CC}
-</td>
-<td style="text-align:left;">
-=&gt;
-</td>
-<td style="text-align:left;">
-{STAI=0}
-</td>
-<td style="text-align:right;">
-0.0112782
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-0.0112782
-</td>
-<td style="text-align:right;">
-3.367089
-</td>
-<td style="text-align:right;">
-3
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-[2]
-</td>
-<td style="text-align:left;">
-{GENDER=1,SOCIOSTATUS=3,CLOCK3111=CC}
+{AGE=0,PER3C=TT}
 </td>
 <td style="text-align:left;">
 =&gt;
@@ -475,10 +648,39 @@ count
 </tr>
 <tr>
 <td style="text-align:left;">
+[2]
+</td>
+<td style="text-align:left;">
+{AGE=0,MEQ=1,PER3C=GG}
+</td>
+<td style="text-align:left;">
+=&gt;
+</td>
+<td style="text-align:left;">
+{STAI=0}
+</td>
+<td style="text-align:right;">
+0.0112782
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+0.0112782
+</td>
+<td style="text-align:right;">
+3.367089
+</td>
+<td style="text-align:right;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
 [3]
 </td>
 <td style="text-align:left;">
-{GENDER=1,PER3A=CC,CLOCK3111=CC}
+{AGE=0,MEQ=1,CRY2=AA}
 </td>
 <td style="text-align:left;">
 =&gt;
@@ -507,7 +709,36 @@ count
 [4]
 </td>
 <td style="text-align:left;">
-{AGE=20,MEQ=1,CLOCK3111=TC}
+{AGE=0,MEQ=1,PER2=AG}
+</td>
+<td style="text-align:left;">
+=&gt;
+</td>
+<td style="text-align:left;">
+{STAI=0}
+</td>
+<td style="text-align:right;">
+0.0187970
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+0.0187970
+</td>
+<td style="text-align:right;">
+3.367089
+</td>
+<td style="text-align:right;">
+5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+[5]
+</td>
+<td style="text-align:left;">
+{AGE=0,VNTR=AB,PER3C=GG}
 </td>
 <td style="text-align:left;">
 =&gt;
@@ -533,39 +764,10 @@ count
 </tr>
 <tr>
 <td style="text-align:left;">
-[5]
-</td>
-<td style="text-align:left;">
-{MEQ=1,PER2=AG,PER3C=GG}
-</td>
-<td style="text-align:left;">
-=&gt;
-</td>
-<td style="text-align:left;">
-{STAI=0}
-</td>
-<td style="text-align:right;">
-0.0150376
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-0.0150376
-</td>
-<td style="text-align:right;">
-3.367089
-</td>
-<td style="text-align:right;">
-4
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
 [6]
 </td>
 <td style="text-align:left;">
-{MEQ=1,PER3C=GG,CLOCK3111=TT}
+{AGE=0,PER2=AG,CRY2=AA}
 </td>
 <td style="text-align:left;">
 =&gt;
@@ -574,19 +776,19 @@ count
 {STAI=0}
 </td>
 <td style="text-align:right;">
-0.0150376
+0.0112782
 </td>
 <td style="text-align:right;">
 1
 </td>
 <td style="text-align:right;">
-0.0150376
+0.0112782
 </td>
 <td style="text-align:right;">
 3.367089
 </td>
 <td style="text-align:right;">
-4
+3
 </td>
 </tr>
 </tbody>
@@ -631,7 +833,7 @@ count
 [1]
 </td>
 <td style="text-align:left;">
-{SOCIOSTATUS=1}
+{AGE=1,PER3B=AA}
 </td>
 <td style="text-align:left;">
 =&gt;
@@ -660,7 +862,7 @@ count
 [2]
 </td>
 <td style="text-align:left;">
-{SOCIOSTATUS=1,PER3B=GG}
+{VNTR=BB,PER2=GG}
 </td>
 <td style="text-align:left;">
 =&gt;
@@ -689,7 +891,7 @@ count
 [3]
 </td>
 <td style="text-align:left;">
-{AGE=17,PER2=AG}
+{VNTR=BB,PER3C=TT}
 </td>
 <td style="text-align:left;">
 =&gt;
@@ -698,19 +900,19 @@ count
 {STAI=1}
 </td>
 <td style="text-align:right;">
-0.0112782
+0.0300752
 </td>
 <td style="text-align:right;">
 1
 </td>
 <td style="text-align:right;">
-0.0112782
+0.0300752
 </td>
 <td style="text-align:right;">
 1.42246
 </td>
 <td style="text-align:right;">
-3
+8
 </td>
 </tr>
 <tr>
@@ -718,7 +920,7 @@ count
 [4]
 </td>
 <td style="text-align:left;">
-{AGE=21,VNTR=BB}
+{MEQ=1,CRY1=CC}
 </td>
 <td style="text-align:left;">
 =&gt;
@@ -727,19 +929,19 @@ count
 {STAI=1}
 </td>
 <td style="text-align:right;">
-0.0112782
+0.0187970
 </td>
 <td style="text-align:right;">
 1
 </td>
 <td style="text-align:right;">
-0.0112782
+0.0187970
 </td>
 <td style="text-align:right;">
 1.42246
 </td>
 <td style="text-align:right;">
-3
+5
 </td>
 </tr>
 <tr>
@@ -747,7 +949,7 @@ count
 [5]
 </td>
 <td style="text-align:left;">
-{AGE=21,PER3B=AG}
+{AGE=1,VNTR=AA,PER3B=AA}
 </td>
 <td style="text-align:left;">
 =&gt;
@@ -776,7 +978,7 @@ count
 [6]
 </td>
 <td style="text-align:left;">
-{AGE=21,SOCIOSTATUS=2}
+{AGE=1,PER3B=AA,socio_0.0=0}
 </td>
 <td style="text-align:left;">
 =&gt;
